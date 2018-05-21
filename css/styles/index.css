@@ -1,0 +1,29 @@
+html, body {
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background-image: url("https://i.imgur.com/vya2c7oh.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: url("https://i.imgur.com/vya2c7ol.jpg");
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: url("https://i.imgur.com/vya2c7om.jpg");
+  }
+}
+
+@media (max-width: 240px) {
+  body {
+    background-image: url("https://i.imgur.com/vya2c7os.jpg");
+  }
+}
