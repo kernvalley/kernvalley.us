@@ -13,3 +13,15 @@
 [submodule "fonts"]
 	path = fonts
 	url = https://github.com/shgysk8zer0/fonts.git
+[submodule "css/animate.css"]
+	path = css/animate.css
+	url = https://github.com/daneden/animate.css.git
+[submodule "css/normalize"]
+	path = css/normalize
+	url = https://github.com/necolas/normalize.css.git
+[submodule "js/svg4everybody"]
+	path = js/svg4everybody
+	url = https://github.com/jonathantneal/svg4everybody.git
+[submodule "img/octicons"]
+	path = img/octicons
+	url = https://github.com/shgysk8zer0/octicons-svg.git

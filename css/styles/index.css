@@ -1,29 +1,45 @@
+@charset "UTF-8";
+@import url("./vars.css");
+@import url("../core-css/viewport.css");
+@import url("../normalize/normalize.css");
+@import url("../core-css/rem.css");
+@import url("../core-css/element.css");
+@import url("../core-css/class-rules.css");
+@import url("../core-css/animations.css");
+@import url("../core-css/fonts.css");
+@import url("../animate.css/animate.css");
+@import url("./icons.css");
+
 html, body {
-  height: 100vh;
-  box-sizing: border-box;
-  overflow: hidden;
+	height: 100vh;
+	box-sizing: border-box;
+	overflow: hidden;
 }
 
 body {
-  background-image: url("https://i.imgur.com/vya2c7oh.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+	background-image: url("https://i.imgur.com/vya2c7oh.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+dialog {
+	border: none;
 }
 
 @media (max-width: 767px) {
-  body {
-    background-image: url("https://i.imgur.com/vya2c7ol.jpg");
-  }
+	body {
+		background-image: url("https://i.imgur.com/vya2c7ol.jpg");
+	}
 }
 
 @media (max-width: 480px) {
-  body {
-    background-image: url("https://i.imgur.com/vya2c7om.jpg");
-  }
+	body {
+		background-image: url("https://i.imgur.com/vya2c7om.jpg");
+	}
 }
 
 @media (max-width: 240px) {
-  body {
-    background-image: url("https://i.imgur.com/vya2c7os.jpg");
-  }
+	body {
+		background-image: url("https://i.imgur.com/vya2c7os.jpg");
+	}
 }
