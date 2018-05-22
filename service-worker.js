@@ -1,5 +1,5 @@
 const config = {
-	version: 'kern-lodge',
+	version: 'kernvalley',
 	caches: [
 		// Main assets
 		'/',
@@ -8,21 +8,7 @@ const config = {
 		'/img/icons.svg',
 		'/img/favicon.svg',
 
-		// Nav menu icons
-		'/img/adwaita-icons/actions/document-open-recent.svg',
-		'/img/adwaita-icons/actions/go-top.svg',
-		'/img/adwaita-icons/actions/view-pin.svg',
-		'/img/adwaita-icons/places/folder-publicshare.svg',
-		'/img/octicons/lib/svg/comment-discussion.svg',
-
-		// Images
-		'/img/board.jpg',
-
 		// Logos
-		'/img/logos/super-user.svg',
-		'/img/logos/css3.svg',
-		'/img/logos/php.svg',
-		'/img/logos/svg.svg',
 		'/img/logos/facebook.svg',
 		'/img/logos/twitter.svg',
 		'/img/logos/linkedin.svg',
