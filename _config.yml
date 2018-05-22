@@ -37,7 +37,7 @@ feed:
   url: /feed.rss
   type: application/rss+xml
 icons: '/img/icons.svg'
-theme-color: '#008000'
+theme-color: '#009688'
 background-color: '#242424'
 # discus-identifier:
 google-analytics: UA-119717465-1
@@ -129,7 +129,7 @@ defaults:
   values:
     layout: post
     author: Chris Zuber
-    permalink: /:categories/:year/:month/:day/:title/
+    permalink: /posts/:categories/:year/:month/:day/:title/
     comments: false
     ads: false
 plugins:
