@@ -17,6 +17,15 @@ loaded().then(async () => {
 	if (document.documentElement.dataset.hasOwnProperty('serviceWorker')) {
 		registerServiceWorker(document.documentElement.dataset.serviceWorker);
 	}
+	$('[data-share]').click(event => {
+		event.preventDefault();
+		event.stopPropagation();
+		navigator.share({
+			title: document.title,
+			url: location.href,
+			text: document.querySelector('meta[name="description"][content]').getAttribute('content'),
+		});
+	});
 	await wait(800);
 	$('#coming-soon').showModal();
 });
