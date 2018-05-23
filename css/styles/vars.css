@@ -30,8 +30,8 @@
 
 	/*==================== Set fonts here ====================*/
 	--main-font: 'Roboto';
-	--title-font: 'Monoton', cursive;
-	--header-font: 'Alice';
+	--title-font: 'Alice', cursive;
+	--header-font: 'Alice', cursive;
 	--article-font: 'Ubuntu';
 	--article-header-font: var(--header-font);
 
