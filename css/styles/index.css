@@ -20,25 +20,32 @@ body {
 	background-image: url("https://i.imgur.com/vya2c7oh.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 dialog {
 	border: none;
 }
 
-@media (max-width: 767px) {
+@media (orientation: landscape and min-width: 1025), (orientation: portrait and max-height: 768px) {
+	body {
+		background-image: url("https://i.imgur.com/vya2c7o.jpg");
+	}
+}
+
+@media (orientation: landscape and max-width: 640px), (orientation: portrait and max-height: 480px) {
 	body {
 		background-image: url("https://i.imgur.com/vya2c7ol.jpg");
 	}
 }
 
-@media (max-width: 480px) {
+@media (orientation: landscape and max-width: 320px), (orientation: portrait and max-height: 240px) {
 	body {
 		background-image: url("https://i.imgur.com/vya2c7om.jpg");
 	}
 }
 
-@media (max-width: 240px) {
+@media (orientation: portrait and max-width: 160px), (orientation: portrait and max-height: 120px) {
 	body {
 		background-image: url("https://i.imgur.com/vya2c7os.jpg");
 	}
