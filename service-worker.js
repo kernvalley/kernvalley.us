@@ -3,6 +3,7 @@ const config = {
 	caches: [
 		// Main assets
 		'/',
+		'/contact/',
 		'/js/index.min.js',
 		'/css/styles/index.min.css',
 		'/img/icons.svg',
