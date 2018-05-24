@@ -15,7 +15,7 @@ sameAs:
   upwork: _~01568b211423f33d85
 birthDate: '1985-03-26'
 telephone: +1-661-619-6712
-email: shgysk8zer0@gmail.com
+email: admin@kernvalley.us
 description: |-
   I write code and poetry. Overall <q>knurd.</q> I know how to exit vim!
   <br />
@@ -42,7 +42,7 @@ worksFor:
     github: kernvalley
 image:
   '@type': ImageObject
-  gravatar: 43578597e449298f5488c2407c8a8ae5
+  gravatar: 314fe5e355732b0a15b18053d318cf37
   width: 256
   height: 256
   encodingFormat: png
