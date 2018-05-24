@@ -3,15 +3,20 @@ title: Home
 layout: default
 ---
 <dialog id="coming-soon" class="card shadow-dark animation-speed-normal animation-ease-in-out fadeInUp">
-	<h1 class="font-title center">
-		{% include icon.html icon='logo' %}
-		<span>KernValley.us</span>
-	</h1>
+	<header class="sticky top z-4 clearfix">
+		<h1 class="font-title float-left">
+			{% include icon.html icon='logo' %}
+			<span>KernValley.us</span>
+		</h1>
+		<button type="button" class="float-right background-none color-default" data-close="#coming-soon">
+			{% include icon.html icon='close' %}
+		</button>
+	</header>
 	<figure class="center">
 		{% include imgur.html url='https://i.imgur.com/975r1K6.png' sizes='60vw' %}
 	</figure>
 	<h2>Coming soon...</h2>
-	<div class="flex row big center">
+	<footer class="flex row big center">
 		<a href="https://twitter.com/kern_valley" rel="nofollow external" title="Twitter" target="_blank">
 			{% include icon.html icon='twitter' %}
 		</a>
@@ -19,5 +24,5 @@ layout: default
 		<a href="https://www.linkedin.com/company/kernvalley-us/" rel="nofollow external" title="LinkedIn" target="_blank">
 			{% include icon.html icon='linkedin' %}
 		</a>
-	</div>
+	</footer>
 </dialog>

@@ -8,12 +8,12 @@
 @import url("../core-css/animations.css");
 @import url("../core-css/fonts.css");
 @import url("../animate.css/animate.css");
+@import url("./dialog.css");
 @import url("./icons.css");
+@import url("./contact.css");
 
 html, body {
-	height: 100vh;
-	box-sizing: border-box;
-	overflow: hidden;
+	min-height: 100vh;
 }
 
 body {

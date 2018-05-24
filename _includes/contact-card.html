@@ -49,7 +49,7 @@
 						<blockquote itemprop="description">{{ include.person.worksFor.description }}</blockquote>
 					{% endif %}
 					{% if include.person.url %}
-						<a href="{{ include.person.url }}" itemprop="url">
+						<a href="{{ include.person.worksFor.url }}" itemprop="url">
 							{% include icon.html icon='link' %}
 							<span>{{ include.person.worksFor.url | replace: 'https://', '' }}</span>
 						</a>
@@ -74,7 +74,7 @@
 					<footer class="flex row big social-icons card shadow">
 						{% if include.person.worksFor.sameAs.github %}
 							<a href="https://github.com/{{ include.person.worksFor.sameAs.github }}" rel="noopener external" title="GitHub" itemprop="sameAs">
-								{% include icon.html icon='mark-github' class='icon' %}
+								{% include icon.html icon='github' class='icon' %}
 							</a>
 						{% endif %}
 						{% if include.person.worksFor.sameAs.twitter %}
@@ -104,7 +104,7 @@
 				{% include icon.html icon='organization' %}
 				<span itemprop="jobTitle">{{ include.person.jobTitle }}</span>
 				<span> @ </span>
-				<a href="{{ page.url | append: '#org-info-dialog' | absolute_url }}" class="color-inherit underline">{{ include.person.worksFor.name }}</a>
+				<span data-show-modal="#org-info-dialog" class="color-inherit underline">{{ include.person.worksFor.name }}</span>
 			</h3>
 			<hr />
 		{% elsif include.person.jobTitle %}
@@ -143,7 +143,7 @@
 		{% endif %}
 		{% if include.person.url %}
 			<a href="{{ include.person.url }}" itemprop="url">
-				{% include icon.html icon='link' %}
+				{% include icon.html icon='web-browser' %}
 				<span>{{ include.person.url | replace: 'https://', '' }}</span>
 			</a>
 			<hr />
@@ -152,7 +152,7 @@
 			<footer class="flex row big social-icons">
 				{% if include.person.sameAs.github %}
 					<a href="https://github.com/{{ include.person.sameAs.github }}" rel="noopener external" title="GitHub" itemprop="sameAs">
-						{% include icon.html icon='mark-github' class='icon' %}
+						{% include icon.html icon='github' class='icon' %}
 					</a>
 				{% endif %}
 				{% if include.person.sameAs.twitter %}
