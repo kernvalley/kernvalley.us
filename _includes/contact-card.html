@@ -17,54 +17,18 @@
 			<span itemprop="familyName">{{ include.person.familyName }}</span>
 		</h1>
 		{% if include.person.worksFor %}
-			<dialog id="org-info-dialog" class="background-primary" itemprop="worksFor" itemtype="http://schema.org/Organization" itemscope="">
+			<dialog id="org-info-dialog" class="background-primary">
 				<header class="sticky top clearfix">
 					<button data-close="#org-info-dialog" class="font-main filter-shadow background-none color-default float-right">
 						{% include icon.html icon='close' %}
 					</button>
 				</header>
-				<div class="card shadow org-info">
-					<h2 class="center" itemprop="name">{{ include.person.worksFor.name }}</h2>
-					{% if include.person.worksFor.logo %}
-						<img
-							itemprop="logo"
-							alt="Logo"
-							crossorigin="anonymous"
-							src="{{ include.person.worksFor.logo.contentUrl | absolute_url }}"
-							width="{{ include.person.worksFor.logo.width | default: 64 }}"
-							height="{{ include.person.worksFor.logo.height | default: 64 }}" />
-							<hr />
-					{% endif %}
-					{% if include.person.worksFor.address %}
-						{% include address.html address=include.person.worksFor.address %}
-						<hr />
-					{% endif %}
-					{% if include.person.worksFor.description %}
-						<blockquote itemprop="description">{{ include.person.worksFor.description }}</blockquote>
-					{% endif %}
-					{% if include.person.worksFor.url %}
-						{% include url.html url=include.person.worksFor.url %}
-						<hr />
-					{% endif %}
-					{% if include.person.worksFor.email %}
-						{% include email.html email=include.person.worksFor.email %}
-						<hr />
-					{% endif %}
-					{% if include.person.worksFor.telephone %}
-						{% include telephone.html telephone=include.person.worksFor.telephone %}
-						<hr />
-					{% endif %}
-				</div>
-				{% if include.person.worksFor.sameAs %}
-					<footer class="flex row big social-icons card shadow">
-						{% include social-links.html links=include.person.worksFor.sameAs %}
-					</footer>
-					{% endif %}
+				{% include business-info.html organization=include.person.worksFor itemprop='worksFor' %}
 			</dialog>
 			<h3>
 				{% include icon.html icon='organization' %}
 				<span itemprop="jobTitle">{{ include.person.jobTitle }}</span>
-				<span> @ </span>
+				<span>@</span>
 				<span data-show-modal="#org-info-dialog" class="color-inherit underline">{{ include.person.worksFor.name }}</span>
 			</h3>
 			<hr />
