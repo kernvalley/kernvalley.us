@@ -13,7 +13,7 @@
 			{% if include.address.postalCode %}
 				<span itemprop="postalCode">{{ include.address.postalCode }}</span>
 			{% endif %}
-			<meta itemprop="country" content="{{ include.address.country | default: 'US' }}" />
+			<meta itemprop="addressCountry" content="{{ include.address.addressCountry | default: 'US' }}" />
 		</div>
 	</div>
 	{% if include.address.url %}</a>{% endif %}
