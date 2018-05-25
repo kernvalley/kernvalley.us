@@ -1,12 +1,20 @@
-<address itemprop="{{ include.itemprop | default: 'address' }}" itemtype="http://schema.org/PostalAddress" itemscope="">
+<address class="clearfix" itemprop="{{ include.itemprop | default: 'address' }}" itemtype="http://schema.org/PostalAddress" itemscope="">
 	{% if include.address.url %}
-		<a href="{{ include.address.url }}" target="_blank" class="block color-inherit" itemprop="url">
+		<a href="{{ include.address.url }}" target="_blank" class="block clearfix color-inherit" itemprop="url">
 	{% endif %}
-	<div itemprop="streetAddress">{{ include.address.streetAddress }}</div>
-	<div>
-		<span itemprop="addressRegion">{{ include.address.addressRegion }}</span>,
-		<span itemprop="addressLocality">{{ include.address.addressLocality }}</span>
-		<span itemprop="postalCode">{{ include.address.postalCode }}</span>
+	<div class="float-left">{% include icon.html icon='location' %}</div>
+	<div class="float-left">
+		{% if include.address.streetAddress %}
+			<div itemprop="streetAddress">{{ include.address.streetAddress }}</div>
+		{% endif %}
+		<div>
+			<span itemprop="addressLocality">{{ include.address.addressLocality }}</span>,
+			<span itemprop="addressRegion">{{ include.address.addressRegion }}</span>
+			{% if include.address.postalCode %}
+				<span itemprop="postalCode">{{ include.address.postalCode }}</span>
+			{% endif %}
+			<meta itemprop="country" content="{{ include.address.country | default: 'US' }}" />
+		</div>
 	</div>
 	{% if include.address.url %}</a>{% endif %}
 </address>

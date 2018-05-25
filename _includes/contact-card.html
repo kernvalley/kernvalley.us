@@ -2,7 +2,7 @@
 	<figure itemprop="image" itemtype="http://schema.org/ImageObject" itemscope="" class="float-left">
 		{% include gravatar.html
 			gravatar=include.person.image.gravatar
-			sizes='min-aspect-ratio: 3/2) 100vh, 100vw'
+			sizes='(min-aspect-ratio: 3/2) 100vh, 100vw'
 			itemprop='url'
 			decoding='async'
 		%}
@@ -18,8 +18,8 @@
 		</h1>
 		{% if include.person.worksFor %}
 			<dialog id="org-info-dialog" class="background-primary" itemprop="worksFor" itemtype="http://schema.org/Organization" itemscope="">
-				<header class="sticky top background-primary color-alt clearfix">
-					<button data-close="#org-info-dialog" class="font-main filter-shadow float-right">
+				<header class="sticky top clearfix">
+					<button data-close="#org-info-dialog" class="font-main filter-shadow background-none color-default float-right">
 						{% include icon.html icon='close' %}
 					</button>
 				</header>
@@ -36,38 +36,23 @@
 							<hr />
 					{% endif %}
 					{% if include.person.worksFor.address %}
-						<address class="clearfix" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope="">
-							{% include icon.html icon='location' %}
-							<span>
-								<span itemprop="addressLocality">{{ include.person.worksFor.address.addressLocality }}</span>,
-								<span itemprop="addressRegion">{{ include.person.worksFor.address.addressRegion }}</span>
-							</span>
-						</address>
+						{% include address.html address=include.person.worksFor.address %}
 						<hr />
 					{% endif %}
 					{% if include.person.worksFor.description %}
 						<blockquote itemprop="description">{{ include.person.worksFor.description }}</blockquote>
 					{% endif %}
-					{% if include.person.url %}
-						<a href="{{ include.person.worksFor.url }}" itemprop="url">
-							{% include icon.html icon='web-browser' %}
-							<span>{{ include.person.worksFor.url | replace: 'https://', '' }}</span>
-						</a>
+					{% if include.person.worksFor.url %}
+						{% include url.html url=include.person.worksFor.url %}
 						<hr />
 					{% endif %}
 					{% if include.person.worksFor.email %}
-						<a href="mailto:{{ include.person.worksFor.email }}" content="{{ include.person.email }}" itemprop="email">
-							{% include icon.html icon='mail-unread' %}
-							<span>{{ include.person.worksFor.email }}</span>
-						</a>
+						{% include email.html email=include.person.worksFor.email %}
 						<hr />
 					{% endif %}
 					{% if include.person.worksFor.telephone %}
-						<a href="tel:{{ include.person.worksFor.telephone }}" content="{{ site.date.person.telephone }}" itemprop="telephone">
-							{% include icon.html icon='call-start' %}
-							<span>{{ include.person.worksFor.telephone | replace: '+', '' }}</span>
-						</a>
-					<hr />
+						{% include telephone.html telephone=include.person.worksFor.telephone %}
+						<hr />
 					{% endif %}
 				</div>
 				{% if include.person.worksFor.sameAs %}
@@ -114,13 +99,7 @@
 			</h3>
 		{% endif %}
 		{% if include.person.homeLocation %}
-			<address class="clearfix" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope="">
-				{% include icon.html icon='location' %}
-				<span>
-					<span itemprop="addressLocality">{{ include.person.homeLocation.address.addressLocality }}</span>,
-					<span itemprop="addressRegion">{{ include.person.homeLocation.address.addressRegion }}</span>
-				</span>
-			</address>
+			{% include address.html address=include.person.homeLocation.address itemprop='homeLocation' %}
 		{% endif %}
 		{% if include.person.description %}
 			<hr />
@@ -128,24 +107,15 @@
 			<hr />
 		{% endif %}
 		{% if include.person.telephone %}
-			<a href="tel:{{ include.person.telephone }}" content="{{ site.date.person.telephone }}" itemprop="telephone">
-				{% include icon.html icon='call-start' %}
-				<span>{{ include.person.telephone | replace: '+', '' }}</span>
-			</a>
+			{% include telephone.html telephone=include.person.telephone %}
 		<hr />
 		{% endif %}
 		{% if include.person.email %}
-			<a href="mailto:{{ include.person.email }}" content="{{ include.person.email }}" itemprop="email">
-				{% include icon.html icon='mail-unread' %}
-				<span>{{ include.person.email }}</span>
-			</a>
+			{% include email.html email=include.person.email %}
 			<hr />
 		{% endif %}
 		{% if include.person.url %}
-			<a href="{{ include.person.url }}" itemprop="url">
-				{% include icon.html icon='web-browser' %}
-				<span>{{ include.person.url | replace: 'https://', '' }}</span>
-			</a>
+			{% include url.html url=include.person.url %}
 			<hr />
 		{% endif %}
 		{% if include.person.sameAs %}
