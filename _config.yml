@@ -166,6 +166,11 @@ exclude:
 - "/img/*.md"
 - "/fonts/*.md"
 - "/js/*.json"
+- "/package.json"
+- "/package-lock.json"
+- "/js/svg4everybody/dist/"
+- "/js/svg4everybody/test/"
+- "/css/animate.css/source/"
 - docs/
 - "/css/*.json"
 - "/img/*.json"
