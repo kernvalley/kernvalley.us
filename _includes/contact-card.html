@@ -57,31 +57,7 @@
 				</div>
 				{% if include.person.worksFor.sameAs %}
 					<footer class="flex row big social-icons card shadow">
-						{% if include.person.worksFor.sameAs.github %}
-							<a href="https://github.com/{{ include.person.worksFor.sameAs.github }}" rel="noopener external" title="GitHub" itemprop="sameAs">
-								{% include icon.html icon='github' class='icon' %}
-							</a>
-						{% endif %}
-						{% if include.person.worksFor.sameAs.twitter %}
-							<a href="https://twitter.com/{{ include.person.worksFor.sameAs.twitter }}" rel="noopener external" title="Twitter" itemprop="sameAs">
-								{% include icon.html icon='twitter' class='icon' %}
-							</a>
-						{% endif %}
-						{% if include.person.worksFor.sameAs.linkedin %}
-							<a href="https://www.linkedin.com/company/{{ include.person.worksFor.sameAs.linkedin }}/" title="LinkedIn" rel="noopener external" itemprop="sameAs">
-								{% include icon.html icon='linkedin' class='icon' %}
-							</a>
-						{% endif %}
-						{% if include.person.worksFor.sameAs.google_plus %}
-							<a href="https://plus.google.com/{{ include.person.worksFor.sameAs.google_plus }}" rel="noopener external" title="Google+" itemprop="sameAs">
-								{% include icon.html icon='google+' class='icon' %}
-							</a>
-						{% endif %}
-						{% if include.person.worksFor.sameAs.youtube %}
-							<a href="https://youtube.com/{{ include.person.worksFor.sameAs.youtube }}" rel="noopener external" title="YouTube" itemprop="sameAs">
-								{% include icon.html icon='youtube' class='icon' %}
-							</a>
-						{% endif %}
+						{% include social-links.html links=include.person.worksFor.sameAs %}
 					</footer>
 					{% endif %}
 			</dialog>
@@ -120,36 +96,7 @@
 		{% endif %}
 		{% if include.person.sameAs %}
 			<footer class="flex row big social-icons">
-				{% if include.person.sameAs.github %}
-					<a href="https://github.com/{{ include.person.sameAs.github }}" rel="noopener external" title="GitHub" itemprop="sameAs">
-						{% include icon.html icon='github' class='icon' %}
-					</a>
-				{% endif %}
-				{% if include.person.sameAs.twitter %}
-					<a href="https://twitter.com/{{ include.person.sameAs.twitter }}" rel="noopener external" title="Twitter" itemprop="sameAs">
-						{% include icon.html icon='twitter' class='icon' %}
-					</a>
-				{% endif %}
-				{% if include.person.sameAs.linkedin %}
-					<a href="https://www.linkedin.com/in/{{ include.person.sameAs.linkedin }}/" title="LinkedIn" rel="noopener external" itemprop="sameAs">
-						{% include icon.html icon='linkedin' class='icon' %}
-					</a>
-				{% endif %}
-				{% if include.person.sameAs.google_plus %}
-					<a href="https://plus.google.com/{{ include.person.sameAs.google_plus }}" rel="noopener external" title="Google+" itemprop="sameAs">
-						{% include icon.html icon='google+' class='icon' %}
-					</a>
-				{% endif %}
-				{% if include.person.sameAs.stackoverflow %}
-					<a href="https://stackoverflow.com/users/{{ include.person.sameAs.stackoverflow }}" rel="noopener external" title="StackOverflow" itemprop="sameAs">
-						{% include icon.html icon='stackoverflow' class='icon' %}
-					</a>
-				{% endif %}
-				{% if include.person.sameAs.upwork %}
-					<a href="https://www.upwork.com/o/profiles/users/{{ include.person.sameAs.upwork }}/" rel="noopener external" title="Upwork" itemprop="sameAs">
-						{% include icon.html icon='upwork' class='icon' %}
-					</a>
-				{% endif %}
+				{% include social-links.html links=include.person.sameAs %}
 			</footer>
 		{% endif %}
 	</section>
