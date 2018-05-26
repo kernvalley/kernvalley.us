@@ -42,8 +42,8 @@ background-color: '#242424'
 # discus-identifier:
 google-analytics: UA-119717465-1
 # ad-sense:
-# webmaster-verifications:
-#  google:
+webmaster-verifications:
+ google: Ki2pY_ejBGKRgpRxNYH5GZgOBLHqfD2krm7uF30ItKY
 #  bing:
 scripts:
   development:
