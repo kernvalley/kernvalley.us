@@ -4,6 +4,7 @@ const config = {
 		// Main assets
 		'/',
 		'/contact/',
+		'/rafting/',
 		'/js/index.min.js',
 		'/css/styles/index.min.css',
 		'/img/icons.svg',
@@ -34,6 +35,7 @@ const config = {
 		'/fonts/',
 		'/posts/',
 		'/contact/',
+		'/rafting/',
 	],
 	hosts: [
 		'secure.gravatar.com',

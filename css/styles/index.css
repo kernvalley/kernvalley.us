@@ -17,36 +17,69 @@ html, body {
 }
 
 body {
-	background-image: url("https://i.imgur.com/vya2c7oh.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.layout-default {
+	background-image: url("https://i.imgur.com/vya2c7oh.jpg");
+}
+
+.layout-river {
+	background-image: url("https://i.imgur.com/lQOh8Ejh.jpg")
 }
 
 dialog {
 	border: none;
 }
 
+#rafting {
+	grid-template-columns: repeat(auto-fill, minmax(400px, 650px));
+	grid-gap: 0.8em;
+}
+
+#rafting figure {
+	max-width: 40%;
+	margin-left: 0;
+}
+
 @media (orientation: landscape and min-width: 1025), (orientation: portrait and max-height: 768px) {
-	body {
+	.layout-default {
 		background-image: url("https://i.imgur.com/vya2c7o.jpg");
+	}
+
+	.layout-river {
+		background-image: url("https://i.imgur.com/lQOh8Ej.jpg");
 	}
 }
 
 @media (orientation: landscape and max-width: 640px), (orientation: portrait and max-height: 480px) {
-	body {
+	.layout-default {
 		background-image: url("https://i.imgur.com/vya2c7ol.jpg");
+	}
+
+	.layout-river {
+		background-image: url("https://i.imgur.com/lQOh8Ejl.jpg");
 	}
 }
 
 @media (orientation: landscape and max-width: 320px), (orientation: portrait and max-height: 240px) {
-	body {
+	.layout-default {
 		background-image: url("https://i.imgur.com/vya2c7om.jpg");
+	}
+
+	.layout-river {
+		background-image: url("https://i.imgur.com/lQOh8Ejm.jpg");
 	}
 }
 
 @media (orientation: portrait and max-width: 160px), (orientation: portrait and max-height: 120px) {
-	body {
+	.layout-default {
 		background-image: url("https://i.imgur.com/vya2c7os.jpg");
+	}
+
+	.layout-river {
+		background-image: url("https://i.imgur.com/lQOh8Ejs.jpg");
 	}
 }

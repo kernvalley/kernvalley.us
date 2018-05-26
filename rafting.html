@@ -1,0 +1,21 @@
+---
+title: Rafting
+permalink: /rafting/
+layout: river
+index: true
+description: A list of rafting companies on the Kern River
+keywords:
+- rafting
+- kern river
+- kern valley
+- kern river valley
+---
+<section id="rafting" class="grid">
+	{% for entry in site.data.orgs.rafting %}
+		<div class="card shadow clearfix local-business" itemtype="http://schema.org/LocalBusiness" itemscope="">
+			{% assign name=entry | first %}
+			{% assign company=site.data.orgs.rafting[name] %}
+			{% include local-business.html business=company %}
+		</div>
+	{% endfor %}
+</section>
