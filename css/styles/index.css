@@ -39,6 +39,10 @@ dialog {
 	grid-gap: 0.8em;
 }
 
+#rafting .card {
+	line-height: 1.8;
+}
+
 #rafting figure {
 	max-width: 40%;
 	margin-left: 0;
