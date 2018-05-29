@@ -43,7 +43,10 @@
 		{% endif %}
 		{% if include.person.description %}
 			<hr />
-			<blockquote itemprop="description">{{ include.person.description }}</blockquote>
+			<div class="clearfix">
+				{% include icon.html icon='note' class='icon float-left' %}
+				<blockquote class="float-left" itemprop="description">{{ include.person.description }}</blockquote>
+			</div>
 			<hr />
 		{% endif %}
 		{% if include.person.telephone %}

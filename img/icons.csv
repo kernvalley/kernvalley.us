@@ -1,4 +1,7 @@
 logo,img/kernvalley-icons/kernvalley.svg
+mark-github,img/octicons/mark-github.svg
+repo,img/octicons/repo.svg
+issue-opened,img/octicons/issue-opened.svg
 linkedin,img/logos/linkedin.svg
 facebook,img/logos/facebook.svg
 twitter,img/logos/twitter.svg
@@ -36,6 +39,12 @@ documents,img/adwaita-icons/emblems/emblem-documents.svg
 pdf,img/file-pdf.svg
 address-book,img/adwaita-icons/mimetypes/x-office-address-book.svg
 print,img/adwaita-icons/actions/document-print.svg
+comments,img/octicons/comment-discussion.svg
+tag,img/octicons/tag.svg
+note,img/octicons/note.svg
+link,img/octicons/link.svg
+link-external,img/octicons/link-external.svg
+organization,img/octicons/organization.svg
 pause,img/adwaita-icons/actions/media-playback-pause.svg
 play,img/adwaita-icons/actions/media-playback-start.svg
 stop,img/adwaita-icons/actions/media-playback-stop.svg
