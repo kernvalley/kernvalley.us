@@ -1,0 +1,17 @@
+name: Eagle Rafting
+telephone: +1-800-375-7395
+url: 'https://eaglerafting.com/'
+email: 'joe@eaglerafting.com'
+address:
+  streetAddress: 13226 Sierra Way
+  addressLocality: Kernville
+  addressRegion: California
+  postalCode: 93238
+  url: 'https://goo.gl/maps/KUEU9gHW8ev'
+image:
+  url: 'https://imgur.com/lCSb6Ax'
+sameAs:
+  facebook: pages/Eagle-Rafting/129768323716034
+  yelp: eagle-rafting-kernville-3
+#  instagram:
+  youtube: channel/UCm2bmeHcCrEkfZZS2B1Sl8A
