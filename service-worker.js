@@ -19,10 +19,8 @@ const config = {
 		'/img/logos/gmail.svg',
 
 		// Fonts
-		'/fonts/acme.woff',
-		'/fonts/Alice.woff',
-		'/fonts/roboto.woff',
-		'/fonts/ubuntu.woff2',
+		'/fonts/Alice.woff2',
+		'/fonts/roboto.woff2',
 	],
 	ignored: [
 		'/service-worker.js',
