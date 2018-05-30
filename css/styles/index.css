@@ -34,16 +34,16 @@ dialog {
 	border: none;
 }
 
-#rafting {
+.directory-listings {
 	grid-template-columns: repeat(auto-fill, minmax(400px, 650px));
 	grid-gap: 0.8em;
 }
 
-#rafting .card {
+.directory-listings .card {
 	line-height: 1.8;
 }
 
-#rafting figure {
+.directory-listings figure {
 	max-width: 40%;
 	margin-left: 0;
 }
