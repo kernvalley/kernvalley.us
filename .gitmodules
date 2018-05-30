@@ -34,3 +34,6 @@
 [submodule "_data/events"]
 	path = _data/events
 	url = https://github.com/kernvalley/event-data.git
+[submodule "_includes"]
+	path = _includes
+	url = https://github.com/kernvalley/jekyll-includes.git
