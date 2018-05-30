@@ -50,6 +50,7 @@ scripts:
   - src: 'https://cdn.polyfill.io/v2/polyfill.min.js?unknown=polyfill&features=es6,MutationObserver,IntersectionObserver,IntersectionObserverEntry,Object.values,Object.entries,NodeList.prototype.@@iterator,Array.prototype.@@iterator&flags=gated'
     type: application/javascript
     crossorigin: anonymous
+    async: true
   - src: /js/index.js
     type: module
     async: true
@@ -61,6 +62,7 @@ scripts:
   - src: 'https://cdn.polyfill.io/v2/polyfill.min.js?unknown=polyfill&features=es6,MutationObserver,IntersectionObserver,IntersectionObserverEntry,Object.values,Object.entries,NodeList.prototype.@@iterator,Array.prototype.@@iterator&flags=gated'
     type: application/javascript
     crossorigin: anonymous
+    async: true
   - src: /js/index.min.js
     type: application/javascript
     async: true
