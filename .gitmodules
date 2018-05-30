@@ -31,3 +31,6 @@
 [submodule "_data/organizations/rafting"]
 	path = _data/organizations/rafting
 	url = https://github.com/kernvalley/orgs-rafting.git
+[submodule "_data/events"]
+	path = _data/events
+	url = https://github.com/kernvalley/event-data.git
