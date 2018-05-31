@@ -4,7 +4,6 @@ const config = {
 		// Main assets
 		'/',
 		'/contact/',
-		'/rafting/',
 		'/js/index.min.js',
 		'/css/styles/index.min.css',
 		'/img/icons.svg',
