@@ -22,12 +22,9 @@ body {
 	background-position: center;
 }
 
-body[data-scene="lake"] {
-	background-image: var(--lake-background-h);
-}
-
-body[data-scene="river"] {
-	background-image: var(--river-background-h);
+#footer {
+	position: fixed;
+	bottom: 0;
 }
 
 dialog {
@@ -46,6 +43,14 @@ dialog {
 .directory-listings figure {
 	max-width: 40%;
 	margin-left: 0;
+}
+
+body[data-scene="lake"] {
+	background-image: var(--lake-background-h);
+}
+
+body[data-scene="river"] {
+	background-image: var(--river-background-h);
 }
 
 @media (orientation: landscape and min-width: 1025), (orientation: portrait and max-height: 768px) {
