@@ -1,0 +1,7 @@
+footer:
+  - text: Contact
+    href: /contact/
+    icon: address-book
+  - text: Rafting
+    href: 'https://kernvalley.us/rafting/'
+    icon: rafting
