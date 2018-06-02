@@ -5,3 +5,4 @@ footer:
   - text: Rafting
     href: 'https://kernvalley.us/rafting/'
     icon: rafting
+    target: _blank
