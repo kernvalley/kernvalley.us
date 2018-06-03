@@ -5,4 +5,4 @@ https://kernvalley-us.netlify.com/* https://kernvalley.us/:splat 301!
 http://kernvalley-us.netlify.com/* https://kernvalley.us/:splat 301!
 
 # Custom redirects
-https://kernvalley.us/rafting/ https://rafting.kernvalley.us/:splat 301!
+/rafting https://rafting.kernvalley.us/ 301!
