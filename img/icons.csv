@@ -2,6 +2,7 @@ logo,img/kernvalley-icons/kernvalley.svg
 rafting,img/kernvalley-icons/rafting.svg
 mark-github,img/octicons/mark-github.svg
 repo,img/octicons/repo.svg
+password,img/adwaita-icons/status/dialog-password.svg
 issue-opened,img/octicons/issue-opened.svg
 linkedin,img/logos/linkedin.svg
 facebook,img/logos/facebook.svg
@@ -31,6 +32,7 @@ mail-send,img/adwaita-icons/actions/mail-send.svg
 mail-unread,img/adwaita-icons/status/mail-unread.svg
 home,img/adwaita-icons/places/user-home.svg
 menu,img/adwaita-icons/actions/open-menu.svg
+check,img/adwaita-icons/actions/object-select.svg
 view-more,img/adwaita-icons/actions/view-more.svg
 preferences,img/adwaita-icons/categories/preferences-system.svg
 web-browser,img/adwaita-icons/apps/web-browser.svg
