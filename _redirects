@@ -3,3 +3,6 @@ https://kernvalley-us.netlify.com/* https://kernvalley.us/:splat 301!
 
 # These extra rules are required because HTTPS is not forced
 http://kernvalley-us.netlify.com/* https://kernvalley.us/:splat 301!
+
+# Custom redirects
+https://kernvalley.us/rafting/ https://rafting.kernvalley.us/:splat 301!
