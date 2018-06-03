@@ -36,6 +36,7 @@ twitter: kern_valley
 feed:
   url: /feed.rss
   type: application/rss+xml
+sitemap: /sitemap.xml
 icons: '/img/icons.svg'
 theme-color: '#009688'
 background-color: '#242424'
