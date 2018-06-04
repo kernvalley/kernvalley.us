@@ -138,6 +138,9 @@ defaults:
 plugins:
 - jekyll-watch
 - jekyll-paginate
+include:
+- _headers
+- _redirects
 exclude:
 - "*.rb"
 - "*.gemspec"
