@@ -32,7 +32,6 @@ const config = {
 		'/fonts/',
 		'/posts/',
 		'/contact/',
-		'/rafting/',
 	],
 	hosts: [
 		'secure.gravatar.com',
