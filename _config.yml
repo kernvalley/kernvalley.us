@@ -38,6 +38,7 @@ feed:
   type: application/rss+xml
 sitemap: /sitemap.xml
 icons: '/img/icons.svg'
+logo: kernvalley
 theme-color: '#009688'
 background-color: '#242424'
 discus-identifier: kernvalley-us
