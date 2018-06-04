@@ -5,6 +5,7 @@ footer:
   - text: Events
     href: 'https://events.kernvalley.us'
     icon: calendar
+    target: _blank
   - text: Rafting
     href: 'https://rafting.kernvalley.us/'
     icon: rafting
