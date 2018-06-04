@@ -40,7 +40,7 @@ sitemap: /sitemap.xml
 icons: '/img/icons.svg'
 theme-color: '#009688'
 background-color: '#242424'
-# discus-identifier:
+discus-identifier: kernvalley-us
 google-analytics: UA-119717465-1
 # ad-sense:
 webmaster-verifications:
