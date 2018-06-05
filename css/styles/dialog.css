@@ -4,7 +4,7 @@ dialog:not([open]) {
 
 dialog {
 	overflow-y: auto;
-	border: 1px solid #ccc;
+	border: none;
 	border-radius: 2px;
 	box-shadow: 0 6px 60px rgba(0,0,0,.8);
 	padding: 0;

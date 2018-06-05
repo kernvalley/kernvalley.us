@@ -3,20 +3,8 @@
 	--tablet-rem: 1.5vw;
 	--mobile-rem: 3.3vw;
 
-	--font-display: optional;
-
-	--lake-background-f: url("https://i.imgur.com/vya2c7of.jpg");
-	--lake-background-h: url("https://i.imgur.com/vya2c7oh.jpg");
-	--lake-background-l: url("https://i.imgur.com/vya2c7ol.jpg");
-	--lake-background-m: url("https://i.imgur.com/vya2c7om.jpg");
-	--lake-background-s: url("https://i.imgur.com/vya2c7os.jpg");
-
-	--river-background-f: url("https://i.imgur.com/lQOh8Ej.jpg");
-	--river-background-h: url("https://i.imgur.com/lQOh8Ejh.jpg");
-	--river-background-l: url("https://i.imgur.com/lQOh8Ejl.jpg");
-	--river-background-m: url("https://i.imgur.com/lQOh8Ejm.jpg");
-	--river-background-s: url("https://i.imgur.com/lQOh8Ejs.jpg");
-
+	--font-display: swap;
+	--text-indent: 1.2em;
 
 	/*================= Set color vars here =================*/
 	--default-color: #010101;
