@@ -25,6 +25,7 @@ loaded().then(async () => {
 			dialog.showModal();
 		}
 	});
+
 	$('[data-close]').click(event => {
 		const target = event.target.closest('[data-close]');
 		const dialog = document.querySelector(target.dataset.close);
@@ -32,6 +33,7 @@ loaded().then(async () => {
 			dialog.close();
 		}
 	});
+
 	$('[data-share]').click(event => {
 		event.preventDefault();
 		event.stopPropagation();
@@ -43,4 +45,5 @@ loaded().then(async () => {
 	});
 	await wait(800);
 	$('#coming-soon').showModal();
+	$('[data-action="show-menu"]').click(() => $('#side-menu').toggleClass('open'));
 });
