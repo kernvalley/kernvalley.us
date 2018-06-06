@@ -43,7 +43,6 @@ loaded().then(async () => {
 			text: document.querySelector('meta[name="description"][content]').getAttribute('content'),
 		});
 	});
-	await wait(800);
-	$('#coming-soon').showModal();
+
 	$('[data-action="show-menu"]').click(() => $('#side-menu').toggleClass('open'));
 });
