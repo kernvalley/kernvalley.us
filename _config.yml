@@ -45,8 +45,8 @@ discus-identifier: kernvalley-us
 google-analytics: UA-119717465-1
 # ad-sense:
 webmaster-verifications:
- google: Ki2pY_ejBGKRgpRxNYH5GZgOBLHqfD2krm7uF30ItKY
-#  bing:
+  google: Ki2pY_ejBGKRgpRxNYH5GZgOBLHqfD2krm7uF30ItKY
+  bing: D0C151304642EDCA64F73FE5C4B43D7A
 scripts:
   development:
   - src: 'https://cdn.polyfill.io/v2/polyfill.min.js?unknown=polyfill&features=es6,MutationObserver,IntersectionObserver,IntersectionObserverEntry,Object.values,Object.entries,NodeList.prototype.@@iterator,Array.prototype.@@iterator&flags=gated'
