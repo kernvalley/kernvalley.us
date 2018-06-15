@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("./vars.css");
+@import url("./backgrounds.css");
 @import url("../core-css/viewport.css");
 @import url("../normalize/normalize.css");
 @import url("../core-css/rem.css");
@@ -10,25 +11,25 @@
 @import url("../animate.css/animate.css");
 @import url("./dialog.css");
 @import url("./icons.css");
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./scenes.css");
 @import url("./contact.css");
 
-html, body {
-	min-height: 100vh;
+.home-section {
+	padding: 2rem 3rem;
 }
 
-body {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+p {
+	text-indent: var(--text-indent, 0);
 }
 
-#footer {
-	position: fixed;
-	bottom: 0;
+.card.card-transparant {
+	background-color: rgba(255,255,255,0.6);
 }
 
-dialog {
-	border: none;
+.background-position-bottom {
+	background-position: bottom;
 }
 
 .directory-listings {
@@ -45,50 +46,9 @@ dialog {
 	margin-left: 0;
 }
 
-body[data-scene="lake"] {
-	background-image: var(--lake-background-h);
-}
-
-body[data-scene="river"] {
-	background-image: var(--river-background-h);
-}
-
-@media (orientation: landscape and min-width: 1025), (orientation: portrait and max-height: 768px) {
-	body[data-scene="lake"] {
-		background-image: var(--lake-background-f);
-	}
-
-	body[data-scene="river"] {
-		background-image: var(--river-background-f);
-	}
-}
-
-@media (orientation: landscape and max-width: 640px), (orientation: portrait and max-height: 480px) {
-	body[data-scene="lake"] {
-		background-image: var(--lake-background-l);
-	}
-
-	body[data-scene="river"] {
-		background-image: var(--river-background-l);
-	}
-}
-
-@media (orientation: landscape and max-width: 320px), (orientation: portrait and max-height: 240px) {
-	body[data-scene="lake"] {
-		background-image: var(--lake-background-m);
-	}
-
-	body[data-scene="river"] {
-		background-image: var(--river-background-m);
-	}
-}
-
-@media (orientation: portrait and max-width: 160px), (orientation: portrait and max-height: 120px) {
-	body[data-scene="lake"] {
-		background-image: var(--lake-background-s);
-	}
-
-	body[data-scene="river"] {
-		background-image: var(--river-background-s);
+@media (min-width: 600px) {
+	.half-width {
+		float: left;
+		width: 45%;
 	}
 }

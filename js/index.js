@@ -1,6 +1,6 @@
 import './std-js/shims.js';
 import './std-js/deprefixer.js';
-import {loaded, $, wait, registerServiceWorker} from './std-js/functions.js';
+import {ready, $, registerServiceWorker} from './std-js/functions.js';
 import webShareApi from './std-js/webShareApi.js';
 import {
 	facebook,
@@ -13,7 +13,7 @@ import {
 
 webShareApi(facebook, twitter, googlePlus, linkedIn, reddit, gmail);
 
-loaded().then(async () => {
+ready().then(async () => {
 	if (document.documentElement.dataset.hasOwnProperty('serviceWorker')) {
 		registerServiceWorker(document.documentElement.dataset.serviceWorker);
 	}
@@ -25,6 +25,7 @@ loaded().then(async () => {
 			dialog.showModal();
 		}
 	});
+
 	$('[data-close]').click(event => {
 		const target = event.target.closest('[data-close]');
 		const dialog = document.querySelector(target.dataset.close);
@@ -32,6 +33,7 @@ loaded().then(async () => {
 			dialog.close();
 		}
 	});
+
 	$('[data-share]').click(event => {
 		event.preventDefault();
 		event.stopPropagation();
@@ -41,6 +43,6 @@ loaded().then(async () => {
 			text: document.querySelector('meta[name="description"][content]').getAttribute('content'),
 		});
 	});
-	await wait(800);
-	$('#coming-soon').showModal();
+
+	// $('[data-action="show-menu"]').click(() => $('#side-menu').toggleClass('open'));
 });

@@ -1,31 +1,115 @@
 ---
 title: Home
 layout: default
+scene: none
+image: 'https://i.imgur.com/975r1K6l.png'
 ---
-<dialog id="coming-soon" class="card shadow-dark animation-speed-normal animation-ease-in-out fadeInUp">
-	<header class="sticky top z-4 clearfix">
-		<h1 class="font-title float-left">
-			{% include icon.html icon='logo' %}
-			<span>KernValley.us</span>
-		</h1>
-		<button type="button" class="float-right background-none color-default" data-close="#coming-soon">
-			{% include icon.html icon='close' %}
-		</button>
-	</header>
-	<figure class="center">
-		{% include imgur.html url='https://i.imgur.com/975r1K6.png' sizes='60vw' %}
-	</figure>
-	<h2>Coming soon...</h2>
-	<p>
-		Click <a href="https://rafting.kernvalley.us">here</a> for information about rafting.
-	</p>
-	<footer class="flex row big center">
-		<a href="https://twitter.com/kern_valley" rel="nofollow external" title="Twitter" target="_blank">
-			{% include icon.html icon='twitter' %}
-		</a>
-		<span>&nbsp;</span>
-		<a href="https://www.linkedin.com/company/kernvalley-us/" rel="nofollow external" title="LinkedIn" target="_blank">
-			{% include icon.html icon='linkedin' %}
-		</a>
-	</footer>
-</dialog>
+<section id="welcome" data-scene="river" class="home-section background-cover background-position-bottom background-fixed height-viewport">
+	<div class="card card-transparant clearfix">
+		<h2 class="center font-title">The Kern River Valley</h2>
+		<figure class="half-width">
+			{% include imgur.html url='https://imgur.com/vya2c7o' sizes='(max-width: 600px) 95vw, 45vw' %}
+		</figure>
+		<div class="half-width">
+			<p>
+				The Kern River Valley is a place of fun and adventure. Those who travel
+				beyond the campgrounds and common distractions won't go far without discovering
+		 		something of interest, whether it be amazing scenery in the mountains around
+				the Valley, an excellent fishing spot that isn't easily accessible, or a trail
+				that leads to an all-but-forgotten area with history to discover.
+			</p>
+			<p>
+				Those looking for a more scheduled and relaxing time will still find plenty
+				to enjoy, from rafting and fishing to bars and dining. Nature and civilization
+				are never far away.
+			</p>
+			<h4 class="underline">Please be respectful and responsible</h4>
+			<ul>
+				<li><strong>Pick up your trash and put out your fires</strong></li>
+				<li><strong>If you have been drinking, stay out of the water and off of the roads</strong></li>
+				<li><strong>Use turnouts and allow traffic to pass you instead of speeding up in passing lanes</strong></li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section id="rafting" data-scene="rafting" class="home-section background-cover background-position-bottom background-fixed height-viewport">
+	<div class="card card-transparant clearfix">
+		<h2 class="center font-title">Rafting</h2>
+		<div class="half-width">
+			<p>
+				The Kern River is the namesake of the Valley, and for good reason. Fed by
+				snowmelt near <a href="https://en.wikipedia.org/wiki/Mount_Whitney" rel="noopener external">Mount Whitney</a>
+				and running for over 160 miles, the Kern River is popular for both rafting
+				and kayaking.
+			</p>
+			<p>
+				During the Summer months, the Kern River attracts rafters from around the
+				world &mdash; both tourists and professionals.
+			</p>
+			<p>
+				There are several <a href="https://rafting.kernvalley.us">rafting companies</a>
+				littered along the Kern River who offer guided trips as well as rentals
+				and other equipment.
+			</p>
+		</div>
+		<figure class="half-width">
+			{% include imgur.html url='https://imgur.com/ftryNKN' sizes='(max-width: 600px) 95vw, 45vw' %}
+		</figure>
+	</div>
+</section>
+<section id="hiking" data-scene="hiking" class="home-section background-cover background-position-bottom background-fixed height-viewport">
+	<div class="card card-transparant clearfix">
+		<h2 class="center font-title">Hiking</h2>
+		<figure class="half-width">
+			{% include imgur.html url='https://imgur.com/RbdSNTK' sizes='(max-width: 600px) 95vw, 45vw' %}
+		</figure>
+		<div class="half-width">
+			<p>
+				With so much nature surrounding small towns, hiking can be done year-round
+				and usually without having to drive more than a few minutes from any of
+				the towns. You cannot drive from one place to another without coming across
+				a trail that would take you to a scenic location, somewhere like an old
+				mining camp or what remains of an abandoned town, or just a path to follow
+				while spending the day getting lost to find yourself.
+			</p>
+			<p>
+				Whether you are in search of <a href="https://www.alltrails.com/trail/us/california/packsaddle-cave-trail" rel="noopener external">Packsaddle Cave</a>,
+				the remaining roads and foundations of <a href="https://www.recreation.gov/recreationalAreaDetails.do?contractCode=NRSO&parkId=242629&facilityId=242629" rel="noopener external">Old Isabella</a>,
+				or nowhere in particular, wandering around is guaranteed to satisfy that itch
+				for adventure if you're just willing to place one foot in front of the
+				other enough times.
+			</p>
+		</div>
+	</div>
+</section>
+<section id="camping" data-scene="camping" class="home-section background-cover background-position-bottom background-fixed height-viewport">
+	<div class="card card-transparant clearfix">
+		<h2 class="center font-title">Camping</h2>
+		<div class="half-width">
+			<p>
+				If staying in a hotel just isn't you're style, the great outdoors always
+				has a vacancy and always has a room with a view (<em>though accomidations may leave some wanting</em>).
+			</p>
+			<p>
+				Bring your RV or tent, rent a cabin, or enjoy a night under the stars! The Kern River Valley
+				has campgrounds suitable for all, ranging from those who don't want to leave
+				the comforts of home behind to those seeking to forget about civilization
+				entirely for a while, you'll find what you're loooking for here.
+			</p>
+		</div>
+		<figure class="half-width">
+			{% include imgur.html url='https://imgur.com/OVhgLfg' sizes='(max-width: 600px) 95vw, 45vw' %}
+		</figure>
+	</div>
+</section>
+<!-- <section id="fishing" data-scene="fishing" class="home-section background-cover background-position-bottom background-fixed height-viewport">
+	<div class="card card-transparant clearfix">
+		<h2 class="center font-title">Fishing</h2>
+		<figure class="half-width">
+			{% include imgur.html url='https://imgur.com/jdcMrHg' sizes='(max-width: 600px) 95vw, 45vw' %}
+		</figure>
+		<p class="half-width">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+</section> -->
