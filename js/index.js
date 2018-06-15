@@ -1,6 +1,6 @@
 import './std-js/shims.js';
 import './std-js/deprefixer.js';
-import {loaded, $, wait, registerServiceWorker} from './std-js/functions.js';
+import {ready, $, registerServiceWorker} from './std-js/functions.js';
 import webShareApi from './std-js/webShareApi.js';
 import {
 	facebook,
@@ -13,7 +13,7 @@ import {
 
 webShareApi(facebook, twitter, googlePlus, linkedIn, reddit, gmail);
 
-loaded().then(async () => {
+ready().then(async () => {
 	if (document.documentElement.dataset.hasOwnProperty('serviceWorker')) {
 		registerServiceWorker(document.documentElement.dataset.serviceWorker);
 	}
@@ -44,5 +44,5 @@ loaded().then(async () => {
 		});
 	});
 
-	$('[data-action="show-menu"]').click(() => $('#side-menu').toggleClass('open'));
+	// $('[data-action="show-menu"]').click(() => $('#side-menu').toggleClass('open'));
 });
