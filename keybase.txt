@@ -1,0 +1,61 @@
+---
+layout: null
+permalink: '/.well-known/keybase.txt'
+---
+==================================================================
+https://keybase.io/shgysk8zer0
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kernvalley.us
+  * I am shgysk8zer0 (https://keybase.io/shgysk8zer0) on keybase.
+  * I have a public key ASDcste3f7IBnCjnwaBrxBY7mzbsV8WBINMwV07k6Qk0mgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010136b46e65d2f80a46129cc6613b34fd1f095a86327115b36a96715a9e2ce3e25f0a",
+      "host": "keybase.io",
+      "kid": "0120dcb2d7b77fb2019c28e7c1a06bc4163b9b36ec57c58120d330574ee4e909349a0a",
+      "uid": "8b27e8144f07fb2cd1cf2e7f9e566319",
+      "username": "shgysk8zer0"
+    },
+    "merkle_root": {
+      "ctime": 1530056274,
+      "hash": "c4d5d57792c31c28199c1e96a894c33ec7fa3f72325a4d2b3c61eeada88259bf6bc01b2e94769e0dd23cab507539573ba16919b8d9000ffb68db644020f19014",
+      "hash_meta": "b9ec88450e3687c0c549ab3681c3484a844631af92b1b1673735f8bb9446401c",
+      "seqno": 3149823
+    },
+    "service": {
+      "entropy": "a2/H42sYTOjpeLWoXTElfOGZ",
+      "hostname": "kernvalley.us",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.3.0"
+  },
+  "ctime": 1530056283,
+  "expire_in": 504576000,
+  "prev": "6b91cec6dd64e2ffad7465b2ef0008bce0e7db6054e018df7971d31852d1ebb6",
+  "seqno": 70,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg3LLXt3+yAZwo58Gga8QWO5s27FfFgSDTMFdO5OkJNJoKp3BheWxvYWTESpcCRsQga5HOxt1k4v+tdGWy7wAIvODn22BU4BjfeXHTGFLR67bEIMgwf5wqdVrIcDk40h51XkBGfyK4SBEBC7E2g98nlNq8AgHCo3NpZ8RAHw0d/SKQ6S1HBsRjHwqQIQI0873Wau+wVCrt7oWI4/dsA+9FxNY+0vEx5gWSeZGY7Sby+ADpu3EHrqYTD2b9A6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIP/Gr96HgDYlnvlCI3qhPw5ukM4dziXxHOk6BMkgzeVko3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/shgysk8zer0
+
+==================================================================
+
