@@ -1,8 +1,8 @@
 author: Chris Zuber
-title: Kern Valley
+title: KernValley.US
 url: 'https://kernvalley.us'
 markdown: kramdown
-version: 1.0.0
+version: 1.0.1
 timezone: America/Los_Angeles
 lang: en
 dir: ltr
@@ -10,122 +10,56 @@ charset: utf-8
 paginate: 8
 paginate_path: "/page-:num/"
 viewport: width=device-width
-robots: 'follow,index'
+robots: 'follow, index'
 referrer: origin-when-cross-origin
 manifest: /manifest.json
 tiles-config: /browserconfig.xml
-service_worker: /service-worker.js
+service_worker: "./service-worker.js"
 og-type: website
 description: "Info about the Kern Valley"
 mobile-web-app-capable: true
-publisher: 'https://plus.google.com/113117303106986445610'
-canonical: 'https://kernvalley.us'
-contextmenu: nav-menu
-body-class: 'background-primary grid border-box cursor-default font-main'
-feature-detect:
-- details
-- dialog
+canonical: 'https://kernvalely.us'
+facebook-id: 2123017744629045
 keywords:
 - kern valley
 - kern river valley
+- kern river
+- lake isabella
+- isabella lake
 repository:
   username: kernvalley
-  title: kernvalley.us
-  url: 'https://github.com/kernvalley/kernvalley.us'
-twitter: kern_valley
-facebook-id: 2123017744629045
-feed:
-  url: /feed.rss
-  type: application/rss+xml
-sitemap: /sitemap.xml
+  project: kernvalley.us
+  title: KernValley.US
+# twitter:
+# feed:
+#   url: /feed.rss
+#   type: application/rss+xml
 icons: '/img/icons.svg'
-logo: kernvalley
-theme-color: '#009688'
-background-color: '#242424'
 discus-identifier: kernvalley-us
 google-analytics: UA-119717465-1
 # ad-sense:
 webmaster-verifications:
   google: Ki2pY_ejBGKRgpRxNYH5GZgOBLHqfD2krm7uF30ItKY
   bing: D0C151304642EDCA64F73FE5C4B43D7A
-scripts:
-  development:
-  - src: 'https://cdn.polyfill.io/v2/polyfill.min.js?unknown=polyfill&features=es6,MutationObserver,IntersectionObserver,IntersectionObserverEntry,Object.values,Object.entries,NodeList.prototype.@@iterator,Array.prototype.@@iterator&flags=gated'
-    type: application/javascript
-    crossorigin: anonymous
-    async: true
-  - src: /js/index.js
-    type: module
-    async: true
-  - src: /js/index.min.js
-    type: application/javascript
-    async: true
-    nomodule: true
-  production:
-  - src: 'https://cdn.polyfill.io/v2/polyfill.min.js?unknown=polyfill&features=es6,MutationObserver,IntersectionObserver,IntersectionObserverEntry,Object.values,Object.entries,NodeList.prototype.@@iterator,Array.prototype.@@iterator&flags=gated'
-    type: application/javascript
-    crossorigin: anonymous
-    async: true
-  - src: /js/index.min.js
-    type: application/javascript
-    async: true
-stylesheets:
-  development:
-  - href: /css/styles/index.css
-    media: all
-  production:
-  - href: /css/styles/index.min.css
-    media: all
-preload:
-- href: /img/icons.svg
-  as: image
-  type: image/svg+xml
-  name: icons
-- href: /img/logos/facebook.svg
-  as: image
-  type: image/svg+xml
-  name: Facebook
-- href: /img/logos/twitter.svg
-  as: image
-  type: image/svg+xml
-  name: Twitter
-- href: /img/logos/google-plus.svg
-  as: image
-  type: image/svg+xml
-  name: Google+
-- href: /img/logos/reddit.svg
-  as: image
-  type: image/svg+xml
-  name: Reddit
-- href: /img/logos/linkedin.svg
-  as: image
-  type: image/svg+xml
-  name: LinkedIn
-- href: /img/logos/gmail.svg
-  as: image
-  type: image/svg+xml
-  name: Gmail
-appicons:
-- src: /img/favicon.svg
-  sizes: any
-  type: image/svg+xml
-- src: /img/icon-512.png
-  sizes: 512x512
-  type: image/png
-- src: /img/icon-192.png
-  sizes: 192x192
-  type: image/png
-screenshots:
-- src: 'https://i.imgur.com/YVG2T9bl.jpg'
-  sizes: 640x300
-  type: image/jpeg
 defaults:
 - scope:
     path: _posts
   values:
     layout: post
-    author: Chris Zuber
-    permalink: /:categories/:year/:month/:day/:title/
+    author:
+      givenName: Chris
+      familyName: Zuber
+      url: 'https://shgysk8zer0.github.io'
+      gravatar: '43578597e449298f5488c2407c8a8ae5'
+      github: shgysk8zer0
+      twitter: shgysk8zer0
+      linkedin: chris-zuber-455346141/
+    publisher:
+      name: 'KernValley.US'
+      url: 'https://kernvalley.us'
+      logo:
+        url: 'https://kernvalley.us/img/icon-256.png'
+    permalink: /posts/:categories/:year/:month/:day/:title/
     comments: true
     ads: false
     index: true
@@ -133,17 +67,34 @@ defaults:
     path: _drafts
   values:
     layout: post
-    author: Chris Zuber
+    author:
+      givenName: Chris
+      familyName: Zuber
+      url: 'https://shgysk8zer0.github.io'
+      gravatar: '43578597e449298f5488c2407c8a8ae5'
+      github: 'shgysk8zer0'
+      twitter: shgysk8zer0
+    publisher:
+      name: 'KernValley.US'
+      url: 'https://kernvalley.us'
+      logo:
+              url: 'https://kernvalley.us/img/icon-256.png'
     permalink: /posts/:categories/:year/:month/:day/:title/
     comments: false
     ads: false
 plugins:
+- jekyll-gist
+- jekyll-youtube
+- jekyll-admin
 - jekyll-watch
 - jekyll-paginate
 include:
+# Folders with dotfiles are ignored by default.
+- .well-known
 - _headers
 - _redirects
 exclude:
+- ".gitkeep"
 - "*.rb"
 - "*.gemspec"
 - "*.php"
@@ -156,31 +107,17 @@ exclude:
 - "*.yml"
 - "*.lock"
 - "*.log"
-- "/css/*.md"
-- "/js/*.md"
-- "/img/*.md"
-- "/fonts/*.md"
-- "/js/*.json"
-- "/package.json"
-- "/package-lock.json"
-- "/js/svg4everybody/dist/"
-- "/js/svg4everybody/test/"
-- "/css/animate.css/source/"
+- "*.config.js"
+- ".gitkeep"
 - docs/
-- "/css/*.json"
-- "/img/*.json"
-- "/js/*.html"
+- "/.github/"
 - Gemfile
 - node_modules/
 - palette.xml
-- postcss.config.js
-- postcss.config.json
 - README.md
 - LICENSE
-- "*.config.js"
+- "/img/octicons/*.md"
+- "/img/octicons/LICENSE"
+- "/img/octicons/script"
 - "/img/adwaita-icons/docs"
 - "/img/adwaita-icons/LICENSE"
-- "css/core-css/docs"
-- "css/normalize/*.html"
-- "js/std-js/docs"
-- "js/std-js/test"
