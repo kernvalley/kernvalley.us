@@ -7,12 +7,3 @@
 [submodule "img/octicons"]
 	path = img/octicons
 	url = https://github.com/shgysk8zer0/octicons-svg.git
-[submodule "img/kernvalley-icons"]
-	path = img/kernvalley-icons
-	url = https://github.com/kernvalley/kernvalley-icons.git
-[submodule "_data/organizations/rafting"]
-	path = _data/organizations/rafting
-	url = https://github.com/kernvalley/orgs-rafting.git
-[submodule "_data/events"]
-	path = _data/events
-	url = https://github.com/kernvalley/event-data.git
