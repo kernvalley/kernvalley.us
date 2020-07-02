@@ -2,11 +2,13 @@
 title: Home
 layout: default
 scene: none
-image: 'https://i.imgur.com/975r1K6l.png'
+imgur: 'https://i.imgur.com/975r1K6l.png'
+no-header: true
+no-sidebar: true
 ---
-<section id="welcome" data-scene="river" class="home-section background-cover background-position-bottom background-fixed height-viewport">
+<section id="welcome" data-scene="river" class="home-section background-cover background-position-bottom background-fixed">
 	<div class="card card-transparant clearfix">
-		<h2 class="center font-title">The Kern River Valley</h2>
+		<h2 class="center font-title color-inherit">The Kern River Valley</h2>
 		<figure class="half-width">
 			{% include imgur.html url='https://imgur.com/vya2c7o' sizes='(max-width: 600px) 95vw, 45vw' %}
 		</figure>
@@ -32,9 +34,14 @@ image: 'https://i.imgur.com/975r1K6l.png'
 		</div>
 	</div>
 </section>
-<section id="rafting" data-scene="rafting" class="home-section background-cover background-position-bottom background-fixed height-viewport">
+<section id="rafting" data-scene="rafting" class="home-section background-cover background-position-bottom background-fixed">
 	<div class="card card-transparant clearfix">
-		<h2 class="center font-title">Rafting</h2>
+		<h2 class="center font-title color-inherit">
+			<a href="https://rafting.kernvalley.us" rel="noopener noreferrer external">
+				<span>Kern Valley Rafting</span>
+				{% include icon.html icon="link-external" height="16" width="16" %}
+			</a>
+		</h2>
 		<div class="half-width">
 			<p>
 				The Kern River is the namesake of the Valley, and for good reason. Fed by
@@ -57,9 +64,50 @@ image: 'https://i.imgur.com/975r1K6l.png'
 		</figure>
 	</div>
 </section>
-<section id="hiking" data-scene="hiking" class="home-section background-cover background-position-bottom background-fixed height-viewport">
+<section id="camping" data-scene="camping" class="home-section background-cover background-position-bottom background-fixed">
 	<div class="card card-transparant clearfix">
-		<h2 class="center font-title">Hiking</h2>
+		<h2 class="center font-title color-inherit">
+			<a href="https://camping.kernvalley.us" rel="noopener noreferrer external">
+				<span>Kern Valley Camping</span>
+				{% include icon.html icon="link-external" height="16" width="16" %}
+			</a>
+		</h2>
+		<div class="half-width">
+			<p>
+				If staying in a hotel just isn't you're style, the great outdoors always
+				has a vacancy and always has a room with a view (<em>though accommodations may leave some wanting</em>).
+			</p>
+			<p>
+				Bring your RV or tent, rent a cabin, or enjoy a night under the stars! The Kern River Valley
+				has campgrounds suitable for all, ranging from those who don't want to leave
+				the comforts of home behind to those seeking to forget about civilization
+				entirely for a while, you'll find what you're loooking for here.
+			</p>
+		</div>
+		<figure class="half-width">
+			{% include imgur.html url='https://imgur.com/OVhgLfg' sizes='(max-width: 600px) 95vw, 45vw' %}
+		</figure>
+	</div>
+</section>
+<section id="events" data-scene="events" class="home-section background-cover background-position-bottom background-fixed">
+	<div class="card card-transparant clearfix">
+		<h2 class="center font-title color-inherit">
+			<a href="https://events.kernvalley.us" rel="noopener noreferrer external">
+				<span>Kern Valley Events</span>
+				{% include icon.html icon="link-external" height="16" width="16" %}
+			</a>
+		</h2>
+		<div class="half-width">
+			<p>Need content for this section</p>
+		</div>
+		<figure class="half-width">
+			{% include imgur.html url='https://imgur.com/ftryNKN' sizes='(max-width: 600px) 95vw, 45vw' %}
+		</figure>
+	</div>
+</section>
+<section id="hiking" data-scene="hiking" class="home-section background-cover background-position-bottom background-fixed">
+	<div class="card card-transparant clearfix">
+		<h2 class="center font-title color-inherit">Hiking</h2>
 		<figure class="half-width">
 			{% include imgur.html url='https://imgur.com/RbdSNTK' sizes='(max-width: 600px) 95vw, 45vw' %}
 		</figure>
@@ -82,29 +130,10 @@ image: 'https://i.imgur.com/975r1K6l.png'
 		</div>
 	</div>
 </section>
-<section id="camping" data-scene="camping" class="home-section background-cover background-position-bottom background-fixed height-viewport">
+
+<!-- <section id="fishing" data-scene="fishing" class="home-section background-cover background-position-bottom background-fixed">
 	<div class="card card-transparant clearfix">
-		<h2 class="center font-title">Camping</h2>
-		<div class="half-width">
-			<p>
-				If staying in a hotel just isn't you're style, the great outdoors always
-				has a vacancy and always has a room with a view (<em>though accommodations may leave some wanting</em>).
-			</p>
-			<p>
-				Bring your RV or tent, rent a cabin, or enjoy a night under the stars! The Kern River Valley
-				has campgrounds suitable for all, ranging from those who don't want to leave
-				the comforts of home behind to those seeking to forget about civilization
-				entirely for a while, you'll find what you're loooking for here.
-			</p>
-		</div>
-		<figure class="half-width">
-			{% include imgur.html url='https://imgur.com/OVhgLfg' sizes='(max-width: 600px) 95vw, 45vw' %}
-		</figure>
-	</div>
-</section>
-<!-- <section id="fishing" data-scene="fishing" class="home-section background-cover background-position-bottom background-fixed height-viewport">
-	<div class="card card-transparant clearfix">
-		<h2 class="center font-title">Fishing</h2>
+		<h2 class="center font-title color-inherit">Fishing</h2>
 		<figure class="half-width">
 			{% include imgur.html url='https://imgur.com/jdcMrHg' sizes='(max-width: 600px) 95vw, 45vw' %}
 		</figure>
