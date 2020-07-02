@@ -1,0 +1,148 @@
+[data-scene="lake"] {
+	background-image: var(--lake-background-h);
+}
+
+[data-scene="river"] {
+	background-image: var(--river-background-h);
+}
+
+[data-scene="rafting"] {
+	background-image: var(--rafting-background-h);
+}
+
+[data-scene="hiking"] {
+	background-image: var(--hiking-background-h);
+}
+
+[data-scene="camping"] {
+	background-image: var(--camping-background-h);
+}
+
+[data-scene="fishing"] {
+	background-image: var(--fishing-background-h);
+}
+
+[data-scene="events"] {
+	background-image: var(--events-background-h);
+}
+
+@media (orientation: landscape and min-width: 1025), (orientation: portrait and max-height: 768px) {
+	[data-scene="lake"] {
+		background-image: var(--lake-background-f);
+	}
+
+	[data-scene="river"] {
+		background-image: var(--river-background-f);
+	}
+
+	[data-scene="rafting"] {
+		background-image: var(--rafting-background-f);
+	}
+
+	[data-scene="hiking"] {
+		background-image: var(--hiking-background-f);
+	}
+
+	[data-scene="camping"] {
+		background-image: var(--camping-background-f);
+	}
+
+	[data-scene="fishing"] {
+		background-image: var(--fishing-background-f);
+	}
+
+	[data-scene="events"] {
+		background-image: var(--events-background-f);
+	}
+}
+
+@media (orientation: landscape and max-width: 640px), (orientation: portrait and max-height: 480px) {
+	[data-scene="lake"] {
+		background-image: var(--lake-background-l);
+	}
+
+	[data-scene="river"] {
+		background-image: var(--river-background-l);
+	}
+
+	[data-scene="rafting"] {
+		background-image: var(--rafting-background-l);
+	}
+
+	[data-scene="hiking"] {
+		background-image: var(--hiking-background-l);
+	}
+
+	[data-scene="camping"] {
+		background-image: var(--camping-background-l);
+	}
+
+	[data-scene="fishing"] {
+		background-image: var(--fishing-background-l);
+	}
+
+	[data-scene="events"] {
+		background-image: var(--events-background-l);
+	}
+}
+
+@media (orientation: landscape and max-width: 320px), (orientation: portrait and max-height: 240px) {
+	[data-scene="lake"] {
+		background-image: var(--lake-background-m);
+	}
+
+	[data-scene="river"] {
+		background-image: var(--river-background-m);
+	}
+
+	[data-scene="rafting"] {
+		background-image: var(--rafting-background-m);
+	}
+
+	[data-scene="hiking"] {
+		background-image: var(--hiking-background-m);
+	}
+
+	[data-scene="camping"] {
+		background-image: var(--camping-background-m);
+	}
+
+	[data-scene="fishing"] {
+		background-image: var(--fishing-background-m);
+	}
+
+	[data-scene="events"] {
+		background-image: var(--events-background-m);
+	}
+}
+
+@media (orientation: portrait and max-width: 160px), (orientation: portrait and max-height: 120px) {
+	body[data-scene="lake"] {
+		background-image: var(--lake-background-s);
+	}
+
+	body[data-scene="river"] {
+		background-image: var(--river-background-s);
+	}
+
+	[data-scene="rafting"] {
+		background-image: var(--rafting-background-s);
+	}
+
+	[data-scene="hiking"] {
+		background-image: var(--hiking-background-s);
+	}
+
+	[data-scene="camping"] {
+		background-image: var(--camping-background-s);
+	}
+
+	[data-scene="fishing"] {
+		background-image: var(--fishing-background-s);
+	}
+
+	[data-scene="events"] {
+		background-image: var(--events-background-s);
+	}
+}
+

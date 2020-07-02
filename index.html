@@ -2,9 +2,22 @@
 title: Home
 layout: default
 scene: none
-image: 'https://i.imgur.com/975r1K6l.png'
+imgur: 'https://i.imgur.com/975r1K6l.png'
+description: Info about the Kern River Valley
+tags:
+- Kern River Valley
+- Kern Valley
+- Kern River
+- Lake Isabella
+- Isabella Lake
+- camping
+- fishing
+- hiking
+- events
+no-header: true
+no-sidebar: true
 ---
-<section id="welcome" data-scene="river" class="home-section background-cover background-position-bottom background-fixed height-viewport">
+<section id="welcome" data-scene="river" class="home-section background-cover background-position-bottom background-fixed">
 	<div class="card card-transparant clearfix">
 		<h2 class="center font-title">The Kern River Valley</h2>
 		<figure class="half-width">
@@ -32,13 +45,18 @@ image: 'https://i.imgur.com/975r1K6l.png'
 		</div>
 	</div>
 </section>
-<section id="rafting" data-scene="rafting" class="home-section background-cover background-position-bottom background-fixed height-viewport">
+<section id="rafting" data-scene="rafting" class="home-section background-cover background-position-bottom background-fixed">
 	<div class="card card-transparant clearfix">
-		<h2 class="center font-title">Rafting</h2>
+		<h2 class="center font-title">
+			<a href="https://rafting.kernvalley.us" class="underline color-inherit" rel="noopener noreferrer external">
+				<span>Kern Valley Rafting</span>
+				{% include icon.html icon="link-external" height="16" width="16" %}
+			</a>
+		</h2>
 		<div class="half-width">
 			<p>
 				The Kern River is the namesake of the Valley, and for good reason. Fed by
-				snow-melt near <a href="https://en.wikipedia.org/wiki/Mount_Whitney" rel="noopener external">Mount Whitney</a>
+				snow-melt near <a href="https://en.wikipedia.org/wiki/Mount_Whitney" rel="noopener noreferrer external">Mount Whitney</a>
 				and running for over 160 miles, the Kern River is popular for both rafting
 				and kayaking.
 			</p>
@@ -57,34 +75,14 @@ image: 'https://i.imgur.com/975r1K6l.png'
 		</figure>
 	</div>
 </section>
-<section id="hiking" data-scene="hiking" class="home-section background-cover background-position-bottom background-fixed height-viewport">
+<section id="camping" data-scene="camping" class="home-section background-cover background-position-bottom background-fixed">
 	<div class="card card-transparant clearfix">
-		<h2 class="center font-title">Hiking</h2>
-		<figure class="half-width">
-			{% include imgur.html url='https://imgur.com/RbdSNTK' sizes='(max-width: 600px) 95vw, 45vw' %}
-		</figure>
-		<div class="half-width">
-			<p>
-				With so much nature surrounding small towns, hiking can be done year-round
-				and usually without having to drive more than a few minutes from any of
-				the towns. You cannot drive from one place to another without coming across
-				a trail that would take you to a scenic location, somewhere like an old
-				mining camp or what remains of an abandoned town, or just a path to follow
-				while spending the day getting lost to find yourself.
-			</p>
-			<p>
-				Whether you are in search of <a href="https://www.alltrails.com/trail/us/california/packsaddle-cave-trail" rel="noopener external">Packsaddle Cave</a>,
-				the remaining roads and foundations of <a href="https://www.recreation.gov/recreationalAreaDetails.do?contractCode=NRSO&parkId=242629&facilityId=242629" rel="noopener external">Old Isabella</a>,
-				or nowhere in particular, wandering around is guaranteed to satisfy that itch
-				for adventure if you're just willing to place one foot in front of the
-				other enough times.
-			</p>
-		</div>
-	</div>
-</section>
-<section id="camping" data-scene="camping" class="home-section background-cover background-position-bottom background-fixed height-viewport">
-	<div class="card card-transparant clearfix">
-		<h2 class="center font-title">Camping</h2>
+		<h2 class="center font-title">
+			<a href="https://camping.kernvalley.us" class="underline color-inherit" rel="noopener noreferrer external">
+				<span>Kern Valley Camping</span>
+				{% include icon.html icon="link-external" height="16" width="16" %}
+			</a>
+		</h2>
 		<div class="half-width">
 			<p>
 				If staying in a hotel just isn't you're style, the great outdoors always
@@ -102,14 +100,57 @@ image: 'https://i.imgur.com/975r1K6l.png'
 		</figure>
 	</div>
 </section>
-<!-- <section id="fishing" data-scene="fishing" class="home-section background-cover background-position-bottom background-fixed height-viewport">
+<section id="events" data-scene="events" class="home-section background-cover background-position-bottom background-fixed">
 	<div class="card card-transparant clearfix">
-		<h2 class="center font-title">Fishing</h2>
+		<h2 class="center font-title">
+			<a href="https://events.kernvalley.us" class="underline color-inherit" rel="noopener noreferrer external">
+				<span>Kern Valley Events</span>
+				{% include icon.html icon="link-external" height="16" width="16" %}
+			</a>
+		</h2>
+		<div class="half-width">
+			<div class="status-box warn">
+				<p>Due to the COVID-19 pandemic and related regulations, events such as the Independence Day
+					fireworks and other events have been cancelled or postponed. Please verify the event status
+					and guidelines for any events posted.</p>
+			</div>
+			<p>The Kern River Valley hosts many anual events such as <a href="https://whiskeyflatdays.com/" rel="noopener noreferrer external">Whiskey Flat Days</a>,
+				our Independence Day fireworks display, Whitewater Wednesday, the Sirretta
+				Street Sale, <a href="https://www.outlawwestkernville.com/" rel="noopener noreferrer external">Outlaw West Music Festival</a>,
+				and Kernville Fall Festival.</p>
+			<p>
+			</p>In addition to these major events, the KRV is also home to lesser events &mdash;
+			from cleaup days with <a href="https://www.keepersofthekern.org/" rel="noopener noreferrer external">Keepers of the Kern</a>
+			&amp; <a href="www.kernriverconservancy.org/" rel="noopern noreferrer external">Kern River Conservancy</a>
+			to bands playing at local restaurants and bars.</p>
+		</div>
 		<figure class="half-width">
-			{% include imgur.html url='https://imgur.com/jdcMrHg' sizes='(max-width: 600px) 95vw, 45vw' %}
+			{% include imgur.html url='https://i.imgur.com/G675Z2r' sizes='(max-width: 600px) 95vw, 45vw' %}
 		</figure>
-		<p class="half-width">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
 	</div>
-</section> -->
+</section>
+<section id="hiking" data-scene="hiking" class="home-section background-cover background-position-bottom background-fixed">
+	<div class="card card-transparant clearfix">
+		<h2 class="center font-title">Hiking</h2>
+		<figure class="half-width">
+			{% include imgur.html url='https://imgur.com/RbdSNTK' sizes='(max-width: 600px) 95vw, 45vw' %}
+		</figure>
+		<div class="half-width">
+			<p>
+				With so much nature surrounding small towns, hiking can be done year-round
+				and usually without having to drive more than a few minutes from any of
+				the towns. You cannot drive from one place to another without coming across
+				a trail that would take you to a scenic location, somewhere like an old
+				mining camp or what remains of an abandoned town, or just a path to follow
+				while spending the day getting lost to find yourself.
+			</p>
+			<p>
+				Whether you are in search of <a href="https://www.alltrails.com/trail/us/california/packsaddle-cave-trail" rel="noopener noreferrer external">Packsaddle Cave</a>,
+				the remaining roads and foundations of <a href="https://www.recreation.gov/recreationalAreaDetails.do?contractCode=NRSO&parkId=242629&facilityId=242629" rel="noopener external noreferrer">Old Isabella</a>,
+				or nowhere in particular, wandering around is guaranteed to satisfy that itch
+				for adventure if you're just willing to place one foot in front of the
+				other enough times.
+			</p>
+		</div>
+	</div>
+</section>
