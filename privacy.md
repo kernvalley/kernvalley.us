@@ -9,6 +9,8 @@ tags:
 index: true
 pinned: true
 layout: default
+no-header: true
+no-sidebar: true
 ---
 ## Privacy Policy
 KernValley.US does not track you whatsoever and takes every reasonable effort
