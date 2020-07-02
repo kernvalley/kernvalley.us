@@ -13,6 +13,18 @@ p {
 	background-color: rgba(255,255,255,0.6);
 }
 
+:root[data-theme="dark"] .card.card-transparant {
+	background-color: rgba(0,0,0,0.6);
+	color: #fafafa;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) .card.card-transparant {
+		background-color: rgba(0,0,0,0.6);
+		color: #fafafa;
+	}
+}
+
 .background-position-bottom {
 	background-position: bottom;
 }
