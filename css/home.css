@@ -1,5 +1,8 @@
+@import url("./scenes.css");
+
 .home-section {
 	padding: 2rem 3rem;
+	min-height: 100vh;
 }
 
 p {
