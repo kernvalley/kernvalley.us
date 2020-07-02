@@ -57,7 +57,9 @@
     "serve:production": "npm run build && JEKYLL_ENV=production bundle exec jekyll serve",
     "serve:dev": "bundle exec jekyll serve --drafts --unpublished --future --profile --trace --strict_front_matter",
     "netlify": "if [ -f '.netlify/state.json' ]; then npm run netlify:live; else npm run netlify:serve; fi",
-    "netlify:deploy": "netlify deploy",
+    "netlify:deploy": "npm run netlify:deploy:dev",
+    "netlify:deploy:prod": "netlify deploy --prod",
+    "netlify:deploy:dev": "netlify deploy",
     "netlify:serve": "netlify dev",
     "netlify:live": "netlify dev --live",
     "netlify:link": "netlify link"
