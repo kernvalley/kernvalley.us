@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Netlify status badge in README [#12](https://github.com/kernvalley/kernvalley.us/issues/12)
+- Add missing config for PostCSS & Rollup [#15](https://github.com/kernvalley/kernvalley.us/issues/15)
 
 ### Changed
 - Update all dependencies
