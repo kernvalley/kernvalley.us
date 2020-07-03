@@ -16,6 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CHANGELOG
 - Links to related pages for sections (camping, events, rafting, etc)
 
+### Fixed
+- Netlify status badge in README [#12](https://github.com/kernvalley/kernvalley.us/issues/12)
+
 ### Changed
 - Update all dependencies
 - Update all assets from template repo
