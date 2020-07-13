@@ -90,7 +90,6 @@ self.addEventListener('fetch', event => {
 self.addEventListener('push', event => {
 	const data = event.data.json();
 	if (('notification' in data) && Array.isArray(data.notification) && Notification.permission === 'granted') {
-
 		this.registration.showNotification(...data.notification);
 	}
 });

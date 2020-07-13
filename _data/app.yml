@@ -1,16 +1,19 @@
 name: KernValley.US
 shortName: KernValley.US
-version: 1.0.0-b1
+version: 1.0.2
 display: standalone
 description: "Info for the Kern River Valley"
 icons-file: /img/icons.svg
 theme:
   color: '#008000'
   background: '#242424'
+# https://web.dev/app-shortcuts/
+shortcuts: []
 icons:
 - src: /img/favicon.svg
   type: image/svg+xml
-  sizes: any
+  sizes: 196x196
+  purpose: maskable any
 - src: /img/apple-touch-icon.png
   rel: apple-touch-icon
   type: image/png
@@ -18,9 +21,11 @@ icons:
 - src: /img/icon-512.png
   type: image/png
   sizes: 512x512
+  purpose: maskable any
 - src: /img/icon-192.png
   type: image/png
   sizes: 192x192
+  purpose: maskable any
 - src: /img/icon-32.png
   type: image/png
   sizes: 32x32
