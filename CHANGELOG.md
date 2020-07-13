@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 <!-- markdownlint-disable -->
+## [v1.0.1] - 2020-07-13
+
+### Added
+- TWA setup with `.well-known/assetlinks.json`
+- Maskable icons
+- NodeJS & Ruby version files
+
+### Changed
+- Update dependencies
+
 ## [v1.0.0] - 2020-07-02
 
 ### Added
