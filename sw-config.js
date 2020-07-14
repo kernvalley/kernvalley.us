@@ -23,7 +23,7 @@ const config = {
 		'https://cdn.kernvalley.us/components/spotify/player.html',
 
 		/* JS, `customElements`, etc. */
-		'https://polyfill.io/v3/polyfill.min.js',
+		'https://cdn.polyfill.io/v3/polyfill.min.js',
 		'https://cdn.kernvalley.us/components/pwa/install.js',
 
 		/* CSS */
