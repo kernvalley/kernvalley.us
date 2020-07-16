@@ -1,7 +1,7 @@
 {
   "name": "kernvalley",
-  "version": "1.0.0",
-  "description": "Info about the kern valley",
+  "version": "1.0.3",
+  "description": "Info about the Kern Valley",
   "private": true,
   "config": {
     "icons": "./_data/icons.csv",
