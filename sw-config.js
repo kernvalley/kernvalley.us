@@ -11,10 +11,10 @@ const config = {
 		/*'{{ site.posts | where: "pinned", true | map: "url" | join: "', '" }}',*/
 	].map(path => new URL(path, location.origin).href),
 	stale: [
-		/* Other HTML */
 		'/css/index.min.css',
 		'/js/index.min.js',
 		'/img/icons.svg',
+		/* Other HTML */
 		'https://cdn.kernvalley.us/components/toast-message.html',
 		'https://cdn.kernvalley.us/components/leaflet/map.html',
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
@@ -23,6 +23,12 @@ const config = {
 		'https://cdn.kernvalley.us/components/spotify/player.html',
 
 		/* JS, `customElements`, etc. */
+		'https://cdn.kernvalley.us/components/toast-message.css',
+		'https://cdn.kernvalley.us/components/leaflet/map.css',
+		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.css',
+		'https://cdn.kernvalley.us/components/slide-show/slide-show.css',
+		'https://cdn.kernvalley.us/components/github/user.css',
+		'https://cdn.kernvalley.us/components/spotify/player.css',
 		'https://cdn.polyfill.io/v3/polyfill.min.js',
 		'https://cdn.kernvalley.us/components/pwa/install.js',
 

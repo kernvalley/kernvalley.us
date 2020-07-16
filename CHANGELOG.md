@@ -1,3 +1,11 @@
+---
+layout: page
+title: CHANGELOG
+description: List of recent changes
+permalink: /changelog/
+robots: noindex
+no-sidebar: true
+---
 # Changelog
 All notable changes to this project will be documented in this file.
 
@@ -6,6 +14,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 <!-- markdownlint-disable -->
+## [v1.0.2] - 2020-07-15
+
+### Changed
+- Update components to use external stylesheets
+- Do not allow `unsafe-inline` for styles in CSP
+
 ## [v1.0.1] - 2020-07-13
 
 ### Added
