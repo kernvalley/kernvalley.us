@@ -54,8 +54,8 @@
 	<!-- /Social data -->
 	<meta name="msapplication-TileColor" content="{{ site.data.app.theme.color | default: '#528ff9' }}" />
 	<meta name="msapplication-config" content="{{ site.tiles-config }}" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="{{ site.data.app.theme.color | default: '#528ff9' }}" />
-	<meta name="theme-color" content="{{ site.data.app.theme.color | default: '#528ff9' }}" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="{{ page.theme-color | default: site.data.app.theme.color }}" />
+	<meta name="theme-color" content="{{ page.theme-color | default: site.data.app.theme.color }}" />
 	{% if site.webmaster-verifications.google %}
 		<meta name="google-site-verification" content="{{ site.webmaster-verifications.google }}" />
 	{% endif %}
