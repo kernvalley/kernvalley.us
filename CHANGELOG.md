@@ -15,7 +15,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.4] - 2020-08-17
+
 ### Changed
+- Dynamically load Google Analytics and polyfill scripts
+- Use `_headers` file for setting HTTP headers
 - Add `theme-color` support on per-page level
 - Update author info
 - Update NPM & GitHub workflows
