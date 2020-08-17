@@ -2,7 +2,7 @@ author: Chris Zuber
 title: KernValley.US
 url: 'https://kernvalley.us'
 markdown: kramdown
-version: 1.0.3
+version: 1.0.4
 timezone: America/Los_Angeles
 lang: en
 dir: ltr
