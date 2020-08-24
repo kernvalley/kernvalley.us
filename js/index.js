@@ -10,7 +10,7 @@ import { importGa } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.j
 import { GA } from './consts.js';
 
 importGa(GA).catch(console.error);
-loadScript('https://cdn.polyfill.io/v3/polyfill.min.js');
+loadScript('https://cdn.polyfill.io/v3/polyfill.min.js').catch(console.error);
 
 document.documentElement.classList.replace('no-js', 'js');
 document.documentElement.classList.toggle('no-dialog', document.createElement('dialog') instanceof HTMLUnknownElement);
