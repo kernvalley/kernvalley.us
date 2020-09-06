@@ -15,6 +15,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.5] - 2020-09-06
+
+### Added
+- Track extenal link click events with GA
+
+### Changed
+- Update preloading
+- Update components/`_includes/`
+
+### Fixed
+- Disable linting for bash script for `.rvmrc` issue
+- Correctly set active button background color
+
 ## [v1.0.4] - 2020-08-17
 
 ### Changed
