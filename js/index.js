@@ -7,13 +7,12 @@ import 'https://cdn.kernvalley.us/components/current-year.js';
 import 'https://cdn.kernvalley.us/components/pwa/install.js';
 import { $, ready } from 'https://cdn.kernvalley.us/js/std-js/functions.js';
 import { loadScript } from 'https://cdn.kernvalley.us/js/std-js/loader.js';
-import { importGa } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
+import { importGa, externalHandler, telHandler, mailtoHandler } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
 import { GA } from './consts.js';
-import { outbound, madeCall } from './analytics.js';
 
 if (typeof GA === 'string' && GA.length !== 0) {
-	requestIdleCallback(() => {
-		importGa(GA).then(async () => {
+	requestIdleCallback(async () => {
+		importGa(GA).finally(async () => {
 			/* global ga */
 			ga('create', GA, 'auto');
 			ga('set', 'transport', 'beacon');
@@ -21,8 +20,9 @@ if (typeof GA === 'string' && GA.length !== 0) {
 
 			await ready();
 
-			$('a[rel~="external"]').click(outbound, { passive: true, capture: true });
-			$('a[href^="tel:"]').click(madeCall, { passive: true, capture: true });
+			$('a[rel~="external"]').click(externalHandler, { passive: true, capture: true });
+			$('a[href^="tel:"]').click(telHandler, { passive: true, capture: true });
+			$('a[href^="mailto:"]').click(mailtoHandler, { passive: true, capture: true });
 		});
 	});
 }

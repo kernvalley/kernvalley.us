@@ -1,8 +1,9 @@
 name: KernValley.US
 shortName: KernValley.US
-version: 1.0.5
+version: 1.0.5-b1
 display: standalone
 description: "Info for the Kern River Valley"
+start_url: /?utm_source=pwa&utm_medium=web
 icons-file: /img/icons.svg
 theme:
   color: '#008000'
