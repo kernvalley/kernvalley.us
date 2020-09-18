@@ -1,4 +1,4 @@
-<a href="{{ include.url }}" class="color-inherit" itemprop="{{ include.itemprop | default: 'url' }}">
+<a href="{{ include.url }}" class="color-inherit" rel="{{ include.rel | default: 'external' }}" itemprop="{{ include.itemprop | default: 'url' }}">
 	{% include icon.html icon='web-browser' %}
 	<span>{{ include.url | replace: 'https://', '' | replace: 'http://', '' | replace: 'www.', '' }}</span>
 </a>
