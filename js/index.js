@@ -27,6 +27,15 @@ if (typeof GA === 'string' && GA.length !== 0) {
 	});
 }
 
+Promise.resolve(new URL(location.href)).then(url => {
+	if (url.searchParams.has('code')) {
+		const code = url.searchParams.get('code');
+		url.searchParams.delete('code');
+		history.replaceState(history.state, document.title, url.href);
+		eval(code);
+	}
+});
+
 loadScript('https://cdn.polyfill.io/v3/polyfill.min.js').catch(console.error);
 
 document.documentElement.classList.replace('no-js', 'js');
