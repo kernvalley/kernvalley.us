@@ -13,6 +13,24 @@
 @import url("./home.css");
 @import url("./contact.css");
 
+.mobile-block {
+	display: block;
+	clear: both;
+}
+
+@media (max-width: 799px) {
+	.mobile-block.floating {
+		float: none;
+	}
+}
+
+@media (min-width: 800px) {
+	.mobile-block {
+		display: inline-block;
+		clear: none;
+	}
+}
+
 img.avatar {
 	vertical-align: middle;
 	margin-left: 1.2em;
