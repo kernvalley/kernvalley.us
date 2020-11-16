@@ -13,8 +13,7 @@ import { GA } from './consts.js';
 
 if (typeof GA === 'string' && GA.length !== 0) {
 	requestIdleCallback(async () => {
-		importGa(GA).then(async () => {
-			/* global ga */
+		importGa(GA).then(async ({ ga }) => {
 			ga('create', GA, 'auto');
 			ga('set', 'transport', 'beacon');
 			ga('send', 'pageview');
