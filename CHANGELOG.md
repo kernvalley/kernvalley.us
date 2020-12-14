@@ -18,6 +18,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v1.0.5] - 2020-09-06
 
 ### Added
+
+- Use `<button is="app-list">` component
+- Add `cookieStore` handling for theme
+
+### Changed
+
+- Allow `apps.kernvalley.us` in CSP
+- Update style of nav links & buttons
+- Use weather component via `_includes/`
+- Move `<button is="pwa-install">` to `<nav>`
+
+### Added
 - Track extenal link click events with GA
 
 ### Changed

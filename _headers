@@ -1,17 +1,17 @@
 /
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'self'; connect-src 'self' https://api.github.com/users/ https://cdn.kernvalley.us/ https://www.google-analytics.com/*/ https://www.google-analytics.com/ https://api.openweathermap.org/data/2.5/; font-src https://cdn.kernvalley.us; img-src https:; script-src 'self' https://cdn.kernvalley.us https://cdn.polyfill.io/v3/polyfill.min.js https://unpkg.com/@webcomponents/ https://www.google-analytics.com/analytics.js https://www.googletagmanager.com/gtag/js https://unpkg.com/leaflet@1.7.1/; style-src 'self' https://cdn.kernvalley.us/ https://unpkg.com/; worker-src 'self';
+  Content-Security-Policy: default-src 'self'; connect-src 'self' https://apps.kernvalley.us/apps.json https://api.github.com/users/ https://cdn.kernvalley.us/ https://www.google-analytics.com/*/ https://www.google-analytics.com/ https://api.openweathermap.org/data/2.5/; font-src https://cdn.kernvalley.us; img-src https:; script-src 'self' https://cdn.kernvalley.us https://cdn.polyfill.io/v3/polyfill.min.js https://unpkg.com/@webcomponents/ https://www.google-analytics.com/analytics.js https://www.googletagmanager.com/gtag/js https://unpkg.com/leaflet@1.7.1/; style-src 'self' https://cdn.kernvalley.us/ https://unpkg.com/; worker-src 'self';
 
 /:placeholder/
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'self'; connect-src 'self' https://api.github.com/users/ https://cdn.kernvalley.us/ https://www.google-analytics.com/*/ https://www.google-analytics.com/ https://api.openweathermap.org/data/2.5/; font-src https://cdn.kernvalley.us; img-src https:; script-src 'self' https://cdn.kernvalley.us https://cdn.polyfill.io/v3/polyfill.min.js https://unpkg.com/@webcomponents/ https://www.google-analytics.com/analytics.js https://www.googletagmanager.com/gtag/js https://unpkg.com/leaflet@1.7.1/; style-src 'self' https://cdn.kernvalley.us/ https://unpkg.com/; worker-src 'self';
+  Content-Security-Policy: default-src 'self'; connect-src 'self' https://apps.kernvalley.us/apps.json https://api.github.com/users/ https://cdn.kernvalley.us/ https://www.google-analytics.com/*/ https://www.google-analytics.com/ https://api.openweathermap.org/data/2.5/; font-src https://cdn.kernvalley.us; img-src https:; script-src 'self' https://cdn.kernvalley.us https://cdn.polyfill.io/v3/polyfill.min.js https://unpkg.com/@webcomponents/ https://www.google-analytics.com/analytics.js https://www.googletagmanager.com/gtag/js https://unpkg.com/leaflet@1.7.1/; style-src 'self' https://cdn.kernvalley.us/ https://unpkg.com/; worker-src 'self';
 
 /service-worker.js
   link: </js/sw-config.js> rel=preload; as=script
   Content-Security-Policy: default-src 'self'; connect-src *
 
 /reset
-  Clear-Site-Data: "*"
+  Clear-Site-Data: "cache", "cookies", "storage"
   Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.kernvalley.us;
 
 /*
