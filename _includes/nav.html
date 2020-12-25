@@ -4,7 +4,7 @@
 	</button>
 	{% for link in site.data.nav-links %}
 		<a href="{{ link.href }}" class="nav-link center inline-block{% if link.href == page.url %} active no-pointer-events{% endif %}" title="{{ link.label }}">
-			{% include icon.html icon=link.icon %}
+			{% include icon.html icon=link.icon fill="currentColor" height="22" width="22" %}
 			<br />
 			<span class="nav-link-label">{{ link.label }}</span>
 		</a>
@@ -12,7 +12,8 @@
 	{% if site.service_worker %}
 		<div class="flex row center">
 			<button is="pwa-install" id="install-btn" src="{{ site.service_worker }}" scope="/" title="Install Web App" reloadonupdate="">
-				{% include icon.html icon="system-software-install" %}
+				{% include icon.html icon="system-software-install" fill="currentColor" height="22" width="22" %}
+				<br />
 				<span>Install</span>
 			</button>
 		</div>
