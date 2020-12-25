@@ -5,9 +5,12 @@ https://kernvalley-us.netlify.com/* https://kernvalley.us/:splat 301!
 http://kernvalley-us.netlify.com/* https://kernvalley.us/:splat 301!
 
 # Custom redirects
-/rafting https://rafting.kernvalley.us/ 301!
-/events  https://events.kernvalley.us/  301!
-/maps    https://maps.kernvalley.us/    301!
-/news    https://news.kernvalley.us/    301!
-/dining  https://dining.kernvalley.us/  301!
-/weather https://weather.kernvalley.us/ 301!
+/rafting	https://rafting.kernvalley.us/	301!
+/events		https://events.kernvalley.us/	301!
+/maps		https://maps.kernvalley.us/	301!
+/news		https://news.kernvalley.us/	301!
+/dining		https://dining.kernvalley.us/	301!
+/weather	https://weather.kernvalley.us/	301!
+/contact	https://contact.kernvalley.us/	301!
+/apps		https://apps.kernvalley.us/	301!
+/delivery	https://weather.kernvalley.us/	301!

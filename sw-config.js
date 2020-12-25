@@ -20,7 +20,6 @@ const config = {
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
 		'https://cdn.kernvalley.us/components/slide-show/slide-show.html',
 		'https://cdn.kernvalley.us/components/github/user.html',
-		'https://cdn.kernvalley.us/components/spotify/player.html',
 
 		/* JS, `customElements`, etc. */
 		'https://cdn.kernvalley.us/components/toast-message.css',
@@ -28,7 +27,6 @@ const config = {
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.css',
 		'https://cdn.kernvalley.us/components/slide-show/slide-show.css',
 		'https://cdn.kernvalley.us/components/github/user.css',
-		'https://cdn.kernvalley.us/components/spotify/player.css',
 		'https://cdn.polyfill.io/v3/polyfill.min.js',
 		'https://cdn.kernvalley.us/components/pwa/install.js',
 
@@ -44,16 +42,6 @@ const config = {
 		'https://cdn.kernvalley.us/img/adwaita-icons/actions/mail-send.svg',
 		'https://cdn.kernvalley.us/img/adwaita-icons/actions/mark-location.svg',
 		'https://cdn.kernvalley.us/img/octicons/file-media.svg',
-
-		/* Social Icons for Web Share API shim */
-		'https://cdn.kernvalley.us/img/octicons/mail.svg',
-		'https://cdn.kernvalley.us/img/logos/facebook.svg',
-		'https://cdn.kernvalley.us/img/logos/twitter.svg',
-		'https://cdn.kernvalley.us/img/logos/google-plus.svg',
-		'https://cdn.kernvalley.us/img/logos/linkedin.svg',
-		'https://cdn.kernvalley.us/img/logos/reddit.svg',
-		'https://cdn.kernvalley.us/img/logos/gmail.svg',
-		'https://cdn.kernvalley.us/img/logos/instagram.svg',
 
 		/* Fonts */
 		'https://cdn.kernvalley.us/fonts/roboto.woff2',

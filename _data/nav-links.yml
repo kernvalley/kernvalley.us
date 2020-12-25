@@ -1,9 +1,6 @@
-- label: Home
-  icon: home
-  href: "/"
-- label: Camping
-  icon: tent
-  href: "https://camping.kernvalley.us"
 - label: Events
   icon: calendar
   href: "https://events.kernvalley.us"
+- label: Contact
+  icon: mail-read
+  href: /contact
