@@ -14,5 +14,7 @@ http://kernvalley-us.netlify.com/* https://kernvalley.us/:splat 301!
 /contact			https://contact.kernvalley.us/					301!
 /apps				https://apps.kernvalley.us/					301!
 /delivery			https://weather.kernvalley.us/					301!
-/login				https://accounts.kernvalley.us/login				301!
+/.well-known/change-password email=:email	https://accounts.kernvalley.us/.well-known/change-password?email=:email 	301!
+/login email=:email				https://accounts.kernvalley.us/login?email=:email				301!
 /.well-known/change-password	https://accounts.kernvalley.us/.well-known/change-password	301!
+/login				https://accounts.kernvalley.us/login				301!
