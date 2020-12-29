@@ -1,9 +1,3 @@
-- href: "https://cdn.polyfill.io/v3/polyfill.min.js"
-  as: script
-  type: text/javascript
-  crossOrigin: anonymous
-  referrerPolicy: no-referrer
-  importance: high
 - href: "https://cdn.kernvalley.us/fonts/roboto.woff2"
   as: font
   importance: high
