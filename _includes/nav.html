@@ -2,8 +2,8 @@
 	<button type="button" is="app-list" id="app-menu" source="{{ site.data.ads.source }}" hidden="">
 		{% include icon.html icon="apps" fill="currentColor" height="22" width="22" %}
 	</button>
-	{% for link in site.data.nav-links %}
-		<a href="{{ link.href }}" class="nav-link center inline-block{% if link.href == page.url %} active no-pointer-events{% endif %}" title="{{ link.label }}">
+	{% for link in site.data.links.nav %}
+		<a href="{{ link.href }}" rel="{{ link.rel | join: ' ' }}" target="{{ link.target | default: '_self' }}" class="nav-link center inline-block{% if link.href == page.url %} active no-pointer-events{% endif %}" title="{{ link.label }}">
 			{% include icon.html icon=link.icon fill="currentColor" height="22" width="22" %}
 			<br />
 			<span class="nav-link-label">{{ link.label }}</span>
