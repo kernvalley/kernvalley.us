@@ -15,7 +15,7 @@ nav:
       - external
 footer:
   - label: Privacy
-    url: /privacy/
+    href: /privacy/
     icon: eye
   - label: Contact
     href: /contact/
