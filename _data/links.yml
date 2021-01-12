@@ -24,7 +24,7 @@ footer:
       - noreferrer
       - noopener
       - external
-  - label: Accounts
+  - label: All Apps
     href: https://apps.kernvalley.us
     icon: apps
     rel:
