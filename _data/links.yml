@@ -1,12 +1,33 @@
+nav:
+  - label: Events
+    icon: calendar
+    href: https://events.kernvalley.us
+    rel:
+      - noopener
+      - noreferrer
+      - external
+  - label: Contact
+    icon: mail-read
+    href: /contact
+    rel:
+      - noopener
+      - noreferrer
+      - external
 footer:
-  - text: Contact
+  - label: Privacy
+    url: /privacy/
+    icon: eye
+  - label: Contact
     href: /contact/
     icon: address-book
-  - text: Events
-    href: 'https://events.kernvalley.us'
-    icon: events
-    target: _blank
-  - text: Rafting
-    href: 'https://rafting.kernvalley.us/'
-    icon: rafting
-    target: _blank
+    rel:
+      - noreferrer
+      - noopener
+      - external
+  - label: Accounts
+    href: https://apps.kernvalley.us
+    icon: apps
+    rel:
+      - noreferrer
+      - noopener
+      - external

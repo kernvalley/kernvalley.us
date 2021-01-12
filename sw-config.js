@@ -31,7 +31,6 @@ const config = {
 		'https://cdn.kernvalley.us/components/pwa/install.js',
 
 		/* CSS */
-		'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css',
 
 		/* Images & Icons */
 		'/img/apple-touch-icon.png',
@@ -42,6 +41,7 @@ const config = {
 		'https://cdn.kernvalley.us/img/adwaita-icons/actions/mail-send.svg',
 		'https://cdn.kernvalley.us/img/adwaita-icons/actions/mark-location.svg',
 		'https://cdn.kernvalley.us/img/octicons/file-media.svg',
+		'https://cdn.kernvalley.us/img/logos/play-badge.svg',
 
 		/* Fonts */
 		'https://cdn.kernvalley.us/fonts/roboto.woff2',
