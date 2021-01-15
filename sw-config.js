@@ -9,6 +9,8 @@ const config = {
 		/* Root document */
 		'{{ site.pages | where: "pinned", true | map: "url" | join: "', '" }}',
 		/*'{{ site.posts | where: "pinned", true | map: "url" | join: "', '" }}',*/
+		'https://apps.kernvalley.us/apps.json',
+		'/manifest.json',
 	].map(path => new URL(path, location.origin).href),
 	stale: [
 		'/css/index.min.css',
@@ -42,11 +44,11 @@ const config = {
 		'https://cdn.kernvalley.us/img/adwaita-icons/actions/mark-location.svg',
 		'https://cdn.kernvalley.us/img/octicons/file-media.svg',
 		'https://cdn.kernvalley.us/img/logos/play-badge.svg',
+		'https://cdn.kernvalley.us/img/logos/instagram.svg',
 
 		/* Fonts */
 		'https://cdn.kernvalley.us/fonts/roboto.woff2',
 		'https://cdn.kernvalley.us/fonts/Libertine.woff',
-		'https://cdn.kernvalley.us/fonts/ubuntu.woff2',
 		/* Other */
 	].map(path => new URL(path, location.origin).href),
 	allowed: [
