@@ -8,4 +8,10 @@
       "0E:23:88:B7:48:EB:DD:E9:AE:A0:84:1F:83:6B:2E:13:15:B9:A6:A3:50:2A:DD:97:56:92:61:BC:A3:A9:8E:B5"
     ]
   }
+}, {
+  "relation": ["delegate_permission/common.query_webapk"],
+  "target": {
+    "namespace": "web",
+    "site": "https://kernvalley.us/manifest.json"
+  }
 }]

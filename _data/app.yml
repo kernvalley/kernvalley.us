@@ -1,7 +1,7 @@
 ---
 name: KernValley.US
 shortName: KernValley.US
-version: 1.0.6-2020-12-24
+version: 1.1.0
 display: standalone
 description: "Info for the Kern River Valley"
 start_url: /
@@ -41,8 +41,9 @@ screenshots:
 related_applications:
   - platform: play
     id: com.us.kernvalley.twa
+  - platform: webapp
+    url: https://kernvalley.us/manifest.json
 features: []
 categories:
   - travel
   - lifestyle
----

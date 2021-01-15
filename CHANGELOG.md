@@ -15,6 +15,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.1.0] - 2021-01-15
+
+### Added
+- `/contact.json` containing `https://schema.org/Organization` data
+- `"webapp"` as platform in web app manifest and `assetlinks.json`
+
+### Changed
+- Use CDN service worker
+- Update several components
+- Overall, update to be consistent with latest app structure and data
+
 ## [v1.0.5] - 2020-09-06
 
 ### Added
