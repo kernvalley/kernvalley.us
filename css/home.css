@@ -57,10 +57,14 @@ p {
 	margin-left: 0;
 }
 
-@media (min-width: 600px) {
-	.half-width {
-		float: left;
-		width: 45%;
-	}
+.half-width {
+	float: left;
+	width: 45%;
 }
 
+@media (max-width: 600px) {
+	.half-width {
+		float: none;
+		width: initial;
+	}
+}
