@@ -9,14 +9,12 @@ const config = {
 	fresh: [
 		'/',
 		'https://apps.kernvalley.us/apps.json',
+		'https://news.kernvalley.us/alerts.json',
 		'/manifest.json',
 	].map(path => new URL(path, location.origin).href),
 	stale: [
 		/* Other HTML */
 		'https://cdn.kernvalley.us/components/toast-message.html',
-		'https://cdn.kernvalley.us/components/leaflet/map.html',
-		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
-		'https://cdn.kernvalley.us/components/slide-show/slide-show.html',
 		'https://cdn.kernvalley.us/components/install/prompt.html',
 		'https://cdn.kernvalley.us/components/github/user.html',
 
@@ -26,9 +24,6 @@ const config = {
 		/* CSS */
 		'/css/index.min.css',
 		'https://cdn.kernvalley.us/components/toast-message.css',
-		'https://cdn.kernvalley.us/components/leaflet/map.css',
-		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.css',
-		'https://cdn.kernvalley.us/components/slide-show/slide-show.css',
 		'https://cdn.kernvalley.us/components/github/user.css',
 		'https://cdn.kernvalley.us/components/install/prompt.css',
 
