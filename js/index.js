@@ -8,9 +8,10 @@ import 'https://cdn.kernvalley.us/components/install/prompt.js';
 import 'https://cdn.kernvalley.us/components/ad/block.js';
 import 'https://cdn.kernvalley.us/components/app/list-button.js';
 import 'https://cdn.kernvalley.us/components/app/stores.js';
+import { getAlerts } from './functions.js';
 import { init } from 'https://cdn.kernvalley.us/js/std-js/data-handlers.js';
 import { getCustomElement } from 'https://cdn.kernvalley.us/js/std-js/custom-elements.js';
-import { ready, loaded, on, toggleClass } from 'https://cdn.kernvalley.us/js/std-js/dom.js';
+import { ready, loaded, on, toggleClass, css } from 'https://cdn.kernvalley.us/js/std-js/dom.js';
 import { importGa, externalHandler, telHandler, mailtoHandler } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
 import { GA } from './consts.js';
 
@@ -41,6 +42,21 @@ toggleClass([document.documentElement], {
 
 ready().then(() => {
 	init();
+
+	getAlerts().then(alerts => {
+		if (alerts.length !== 0) {
+			const container = document.createElement('section');
+			container.classList.add('flex', 'column');
+			css([container], {
+				'gap': '1.5em',
+				'justify-content': 'space-around',
+				'padding': '0.8em 10% 0.8em 10%',
+			});
+
+			container.append(...alerts);
+			document.getElementById('main').prepend(container);
+		}
+	});
 
 	getCustomElement('install-prompt').then(HTMLInstallPromptElement => {
 		on('#install-btn', ['click'], () => new HTMLInstallPromptElement().show())
