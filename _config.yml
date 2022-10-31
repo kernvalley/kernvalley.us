@@ -84,8 +84,6 @@ defaults:
     comments: false
     ads: false
 plugins:
-- jekyll-gist
-- jekyll-youtube
 - jekyll-admin
 - jekyll-watch
 - jekyll-paginate
