@@ -10,7 +10,7 @@ export default {
 		sourcemap: true,
 	},
 	plugins: [
-		rollupImport(['_data/importmap.yaml']),
+		rollupImport(),
 		terser(),
 	],
 };
