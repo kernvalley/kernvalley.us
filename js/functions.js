@@ -1,4 +1,4 @@
-import { getJSON } from 'https://cdn.kernvalley.us/js/std-js/http.js';
+import { getJSON } from '@shgysk8zer0/kazoo/http.js';
 
 export async function getAlerts() {
 	const alerts = await getJSON('https://news.kernvalley.us/alerts.json');
