@@ -1,6 +1,7 @@
 ---
 permalink: /privacy/
 title: Privacy Policy
+layout: wide
 description: Privacy Policy for KernValley.US
 tags:
 - privacy
@@ -8,7 +9,6 @@ tags:
 - privacy policy
 index: true
 pinned: true
-layout: default
 no-header: true
 no-sidebar: true
 ---

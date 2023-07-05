@@ -3,15 +3,35 @@ name: default
 theme: default
 og-type: website
 itemtype: 'https://schema.org/WebPage'
-layout: base
-sidebar: false
-pinned-posts: 3
-recent-posts: 8
-main-itemtype: Event
+sidebar: true
 ---
-{% unless page.no-header == true %}{% include header.html %}{% endunless %}
-{% unless page.no-nav == true %}{% include common/nav.html %}{% endunless %}
-<main id="main">{{ content }}</main>
-{% unless page.no-sidebar %}{% include sidebar.html recent-posts=layout.recent-posts pinned-posts=layout.pinned-posts %}{% endunless %}
-{% unless page.no-footer == true %}{% include common/footer.html keep-kern-clean=site.keep-kern-clean %}{% endunless %}
-{% unless page.no-share == true %}{% include common/share-button.html text=page.description %}{% endunless %}
+<!DOCTYPE html>
+<html
+	lang="{{ site.lang }}"
+	dir="{{ site.dir }}"
+	class="no-js border-box scroll-smooth"
+	itemtype="{{ page.itemtype | default: layout.itemtype }}"
+	prefix="og: http://ogp.me/ns#"{% if page.policies.trusted %}
+	data-trusted-policies="{{ page.policies.trusted | join: ' ' }}"{% elsif layout.policies.trusted %}
+	data-trusted-policies="{{ layout.policies.trusted | join: ' ' }}"{% elsif site.data.policies.trusted %}
+	data-trusted-policies="{{ site.data.policies.trusted | join: ' ' }}"{% endif %}{% if page.policies.untrusted %}
+	data-untrusted-policies="{{ page.policies.untrusted | join: ' ' }}"{% elsif layout.policies.untrusted %}
+	data-untrusted-policies="{{ layout.policies.untrusted | join: ' ' }}"{% elsif site.data.policies.untrusted %}
+	data-untrusted-policies="{{ site.data.policies.untrusted | join: ' ' }}"{% endif %}
+	data-theme="{{ page.theme | default: layout.theme }}"
+	data-layout="{{ layout.name }}"{% if page.background %}
+	data-background="{{ page.background }}"{% endif %}
+	itemscope=""
+>
+	{% include common/head.html %}
+	<body id="top" class="grid font-main background-primary color-default overflow-x-hidden">
+		{% include header.html %}
+		{% include common/nav.html %}
+		<main id="main" class="card">
+			{{ content }}
+		</main>
+		{% if layout.sidebar %}{% include sidebar.html recent-posts=5 pinned-posts=5 %}{% endif %}
+		{% include footer.html %}
+		{% include common/share-button.html text=page.description %}
+	</body>
+</html>

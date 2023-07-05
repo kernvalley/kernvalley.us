@@ -14,18 +14,16 @@ const config = {
 	].map(path => new URL(path, location.origin).href),
 	stale: [
 		/* Other HTML */
-		'https://cdn.kernvalley.us/components/toast-message.html',
-		'https://cdn.kernvalley.us/components/install/prompt.html',
-		'https://cdn.kernvalley.us/components/github/user.html',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}/install/prompt.html',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}/github/user.html',
 
 		/* JS */
 		'/js/index.min.js',
 
 		/* CSS */
 		'/css/index.min.css',
-		'https://cdn.kernvalley.us/components/toast-message.css',
-		'https://cdn.kernvalley.us/components/github/user.css',
-		'https://cdn.kernvalley.us/components/install/prompt.css',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}/github/user.css',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}/install/prompt.css',
 
 		/* Images & Icons */
 		'/img/apple-touch-icon.png',
