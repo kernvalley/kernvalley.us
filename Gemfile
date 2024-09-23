@@ -10,7 +10,7 @@ ruby RUBY_VERSION
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-gem "jekyll", "4.3.1"
+gem "jekyll", "4.3.4"
 gem "jekyll-paginate", "~> 1.1"
 
 # Added at 2018-01-18 18:00:06 -0800 by shgysk8zer0:
